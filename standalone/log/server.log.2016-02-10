@@ -1,0 +1,175 @@
+17:22:41,891 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.6.Final-redhat-1
+17:22:42,913 INFO  [org.jboss.msc] (main) JBoss MSC version 1.1.5.Final-redhat-1
+17:22:43,075 INFO  [org.jboss.as] (MSC service thread 1-8) JBAS015899: JBoss EAP 6.4.0.GA (AS 7.5.0.Final-redhat-21) starting
+17:22:43,084 DEBUG [org.jboss.as.config] (MSC service thread 1-8) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /usr/local/share/applications/firefox/jbd/runtimes/jboss-eap/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/java/jdk1.8.0_65/jre/lib/endorsed
+	java.ext.dirs = /usr/java/jdk1.8.0_65/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/java/jdk1.8.0_65/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_65-b17
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_65
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.65-b01
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /usr/local/share/applications/firefox/jbd/runtimes/jboss-eap
+	jboss.host.name = localhost
+	jboss.modules.dir = /usr/local/share/applications/firefox/jbd/runtimes/jboss-eap/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = localhost
+	jboss.qualified.host.name = localhost.localdomain
+	jboss.server.base.dir = /usr/local/share/applications/firefox/jbd/runtimes/jboss-eap/standalone
+	jboss.server.config.dir = /usr/local/share/applications/firefox/jbd/runtimes/jboss-eap/standalone/configuration
+	jboss.server.data.dir = /usr/local/share/applications/firefox/jbd/runtimes/jboss-eap/standalone/data
+	jboss.server.deploy.dir = /usr/local/share/applications/firefox/jbd/runtimes/jboss-eap/standalone/data/content
+	jboss.server.log.dir = /usr/local/share/applications/firefox/jbd/runtimes/jboss-eap/standalone/log
+	jboss.server.name = localhost
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /usr/local/share/applications/firefox/jbd/runtimes/jboss-eap/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/usr/local/share/applications/firefox/jbd/runtimes/jboss-eap/standalone/configuration/logging.properties
+	module.path = /usr/local/share/applications/firefox/jbd/runtimes/jboss-eap/modules
+	org.jboss.boot.log.file = /usr/local/share/applications/firefox/jbd/runtimes/jboss-eap/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.3.5-300.fc23.x86_64+debug
+	path.separator = :
+	program.name = JBossTools: JBoss EAP 6.4
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/java/jdk1.8.0_65/jre/lib/resources.jar:/usr/java/jdk1.8.0_65/jre/lib/rt.jar:/usr/java/jdk1.8.0_65/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_65/jre/lib/jsse.jar:/usr/java/jdk1.8.0_65/jre/lib/jce.jar:/usr/java/jdk1.8.0_65/jre/lib/charsets.jar:/usr/java/jdk1.8.0_65/jre/lib/jfr.jar:/usr/java/jdk1.8.0_65/jre/classes
+	sun.boot.library.path = /usr/java/jdk1.8.0_65/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /usr/local/share/applications/firefox/jbd/runtimes/jboss-eap/modules -jaxpmodule javax.xml.jaxp-provider -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/usr/local/share/applications/firefox/jbd/runtimes/jboss-eap/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = GB
+	user.dir = /usr/local/share/applications/firefox/jbd/runtimes/jboss-eap/bin
+	user.home = /home/me
+	user.language = en
+	user.name = me
+	user.timezone = Asia/Kolkata
+17:22:43,085 DEBUG [org.jboss.as.config] (MSC service thread 1-8) VM Arguments: -Dprogram.name=JBossTools: JBoss EAP 6.4 -Xms1024m -Xmx1024m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/usr/local/share/applications/firefox/jbd/runtimes/jboss-eap/standalone/log/boot.log -Dlogging.configuration=file:/usr/local/share/applications/firefox/jbd/runtimes/jboss-eap/standalone/configuration/logging.properties -Djboss.home.dir=/usr/local/share/applications/firefox/jbd/runtimes/jboss-eap -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+17:22:48,904 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found jboss-forge-html5.war in deployment directory. To trigger deployment create a file called jboss-forge-html5.war.dodeploy
+17:22:48,906 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found Hamstring.war in deployment directory. To trigger deployment create a file called Hamstring.war.dodeploy
+17:22:48,968 INFO  [org.xnio] (MSC service thread 1-4) XNIO Version 3.0.13.GA-redhat-1
+17:22:48,974 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.0.13.GA-redhat-1
+17:22:49,021 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 3.3.4.Final-redhat-1
+17:22:49,060 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+17:22:49,169 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 31) JBAS010280: Activating Infinispan subsystem.
+17:22:49,209 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+17:22:49,228 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 44) JBAS013371: Activating Security Subsystem
+17:22:49,240 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 39) JBAS011800: Activating Naming Subsystem
+17:22:49,239 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 37) JBAS012615: Activated the following JSF Implementations: [main, 1.2]
+17:22:49,288 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+17:22:49,306 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-5) JBAS010408: Starting JCA Subsystem (IronJacamar 1.0.31.Final-redhat-1)
+17:22:49,748 INFO  [org.jboss.as.security] (MSC service thread 1-1) JBAS013370: Current PicketBox version=4.1.1.Final-redhat-1
+17:22:50,321 INFO  [org.jboss.as.naming] (MSC service thread 1-1) JBAS011802: Starting Naming Service
+17:22:50,321 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) JBAS015400: Bound mail session [java:jboss/mail/Default]
+17:22:51,000 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+17:22:52,420 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-4) JBWEB003001: Coyote HTTP/1.1 initializing on : http-localhost/127.0.0.1:8080
+17:22:52,581 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-4) JBWEB003000: Coyote HTTP/1.1 starting on: http-localhost/127.0.0.1:8080
+17:22:52,987 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+17:22:53,677 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) JBAS015012: Started FileSystemDeploymentService for directory /usr/local/share/applications/firefox/jbd/runtimes/jboss-eap/standalone/deployments
+17:22:53,680 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "Hamstring.war" (runtime-name: "Hamstring.war")
+17:22:53,681 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015876: Starting deployment of "jboss-forge-html5.war" (runtime-name: "jboss-forge-html5.war")
+17:22:53,757 INFO  [org.jboss.as.remoting] (MSC service thread 1-3) JBAS017100: Listening on 127.0.0.1:9999
+17:22:53,853 INFO  [org.jboss.as.remoting] (MSC service thread 1-6) JBAS017100: Listening on 127.0.0.1:4447
+17:22:53,978 INFO  [org.jboss.ws.common.management] (MSC service thread 1-1) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.4.Final-redhat-1
+17:22:54,253 INFO  [org.jboss.as.jpa] (MSC service thread 1-3) JBAS011401: Read persistence.xml for jboss-forge-html5-persistence-unit
+17:22:55,193 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 50) JBAS011402: Starting Persistence Unit Service 'jboss-forge-html5.war#jboss-forge-html5-persistence-unit'
+17:22:55,280 INFO  [org.jboss.web] (ServerService Thread Pool -- 55) JBAS018210: Register web context: /Hamstring
+17:22:56,173 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 50) HCANN000001: Hibernate Commons Annotations {4.0.2.Final-redhat-1}
+17:22:56,273 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 50) HHH000412: Hibernate Core {4.2.18.Final-redhat-2}
+17:22:56,303 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 50) HHH000206: hibernate.properties not found
+17:22:56,305 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 50) HHH000021: Bytecode provider name : javassist
+17:22:56,669 INFO  [org.hibernate.ejb.Ejb3Configuration] (ServerService Thread Pool -- 50) HHH000204: Processing PersistenceUnitInfo [
+	name: jboss-forge-html5-persistence-unit
+	...]
+17:22:56,820 WARN  [org.hibernate.ejb.Ejb3Configuration] (ServerService Thread Pool -- 50) HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+17:22:57,181 INFO  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] (ServerService Thread Pool -- 50) HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+17:22:57,534 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 50) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+17:22:57,541 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 50) HHH000431: Unable to determine H2 database version, certain features may not work
+17:22:58,119 INFO  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] (ServerService Thread Pool -- 50) HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jta.CMTTransactionFactory
+17:22:58,149 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 50) HHH000397: Using ASTQueryTranslatorFactory
+17:22:58,246 INFO  [org.hibernate.validator.internal.util.Version] (ServerService Thread Pool -- 50) HV000001: Hibernate Validator 4.3.2.Final-redhat-2
+17:22:58,675 INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] (ServerService Thread Pool -- 50) HHH000227: Running hbm2ddl schema export
+17:22:58,681 INFO  [stdout] (ServerService Thread Pool -- 50) Hibernate: 
+17:22:58,681 INFO  [stdout] (ServerService Thread Pool -- 50)     drop table Member if exists
+17:22:58,682 INFO  [stdout] (ServerService Thread Pool -- 50) Hibernate: 
+17:22:58,683 INFO  [stdout] (ServerService Thread Pool -- 50)     drop sequence if exists hibernate_sequence
+17:22:58,683 INFO  [stdout] (ServerService Thread Pool -- 50) Hibernate: 
+17:22:58,684 INFO  [stdout] (ServerService Thread Pool -- 50)     create table Member (
+17:22:58,684 INFO  [stdout] (ServerService Thread Pool -- 50)         id bigint not null,
+17:22:58,684 INFO  [stdout] (ServerService Thread Pool -- 50)         full_name varchar(25) not null,
+17:22:58,684 INFO  [stdout] (ServerService Thread Pool -- 50)         phone_number varchar(12) not null,
+17:22:58,684 INFO  [stdout] (ServerService Thread Pool -- 50)         primary key (id)
+17:22:58,685 INFO  [stdout] (ServerService Thread Pool -- 50)     )
+17:22:58,686 INFO  [stdout] (ServerService Thread Pool -- 50) Hibernate: 
+17:22:58,687 INFO  [stdout] (ServerService Thread Pool -- 50)     create sequence hibernate_sequence start with 1 increment by 1
+17:22:58,689 INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] (ServerService Thread Pool -- 50) HHH000230: Schema export complete
+17:22:58,728 INFO  [org.jboss.web] (ServerService Thread Pool -- 56) JBAS018210: Register web context: /jboss-forge-html5
+17:22:58,833 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS015859: Deployed "Hamstring.war" (runtime-name : "Hamstring.war")
+17:22:58,833 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS015859: Deployed "jboss-forge-html5.war" (runtime-name : "jboss-forge-html5.war")
+17:22:58,961 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
+17:22:58,961 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+17:22:58,962 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: JBoss EAP 6.4.0.GA (AS 7.5.0.Final-redhat-21) started in 18337ms - Started 262 of 300 services (63 services are lazy, passive or on-demand)
+17:47:31,850 INFO  [org.jboss.web] (ServerService Thread Pool -- 60) JBAS018224: Unregister web context: /Hamstring
+17:47:31,831 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-8) JBWEB003075: Coyote HTTP/1.1 pausing on: http-localhost/127.0.0.1:8080
+17:47:31,864 INFO  [org.jboss.web] (ServerService Thread Pool -- 59) JBAS018224: Unregister web context: /jboss-forge-html5
+17:47:31,865 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-8) JBWEB003077: Coyote HTTP/1.1 stopping on : http-localhost/127.0.0.1:8080
+17:47:31,888 INFO  [org.apache.catalina.core] (MSC service thread 1-4) JBWEB001079: Container org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/] has not been started
+17:47:32,019 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 66) JBAS011403: Stopping Persistence Unit Service 'jboss-forge-html5.war#jboss-forge-html5-persistence-unit'
+17:47:32,030 INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] (ServerService Thread Pool -- 66) HHH000227: Running hbm2ddl schema export
+17:47:32,033 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015877: Stopped deployment Hamstring.war (runtime-name: Hamstring.war) in 224ms
+17:47:32,042 INFO  [stdout] (ServerService Thread Pool -- 66) Hibernate: 
+17:47:32,047 INFO  [stdout] (ServerService Thread Pool -- 66)     drop table Member if exists
+17:47:32,055 INFO  [stdout] (ServerService Thread Pool -- 66) Hibernate: 
+17:47:32,058 INFO  [stdout] (ServerService Thread Pool -- 66)     drop sequence if exists hibernate_sequence
+17:47:32,065 INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] (ServerService Thread Pool -- 66) HHH000230: Schema export complete
+17:47:32,073 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+17:47:32,088 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015877: Stopped deployment jboss-forge-html5.war (runtime-name: jboss-forge-html5.war) in 283ms
+17:47:32,102 INFO  [org.jboss.as] (MSC service thread 1-5) JBAS015950: JBoss EAP 6.4.0.GA (AS 7.5.0.Final-redhat-21) stopped in 292ms

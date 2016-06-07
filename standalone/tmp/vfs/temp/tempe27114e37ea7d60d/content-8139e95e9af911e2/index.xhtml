@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                template="/WEB-INF/templates/default.xhtml">
+    <ui:define name="content">
+        <h:button value="Home" outcome="index"/> <br/>
+
+        <h1>Welcome to WildFly!</h1>
+
+        <div>
+            <p>You have successfully deployed a Java EE 7 Enterprise
+                Application.</p>
+            <h3>Your application can run on:</h3>
+            <img src="resources/gfx/wildfly_400x130.jpg"/>
+            <br/>
+            <h:link value="Membership Management" outcome="MemberMgmt"/> <br/>
+            <h:link value="Inventory Management" outcome="pcInventoryMgmt"/> <br/>
+            <h:link value="Inventory Reports" outcome="pcInventoryReport"/> <br/>
+        </div>
+    </ui:define>
+</ui:composition>

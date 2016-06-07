@@ -1,0 +1,21 @@
+06:06:34,172 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-5) JBWEB003075: Coyote HTTP/1.1 pausing on: http-/127.0.0.1:8080
+06:06:34,172 INFO  [org.apache.catalina.core] (MSC service thread 1-7) JBWEB001079: Container org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/] has not been started
+06:06:34,188 INFO  [org.jboss.web] (ServerService Thread Pool -- 66) JBAS018224: Unregister web context: /aggregator
+06:06:34,181 INFO  [org.jboss.web] (ServerService Thread Pool -- 63) JBAS018224: Unregister web context: /jboss-forge-html5
+06:06:34,174 INFO  [org.jboss.web] (ServerService Thread Pool -- 64) JBAS018224: Unregister web context: /Hamstring
+06:06:34,173 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-5) JBWEB003077: Coyote HTTP/1.1 stopping on : http-/127.0.0.1:8080
+06:06:34,218 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 65) JBAS011403: Stopping Persistence Unit Service 'jboss-forge-html5.war#jboss-forge-html5-persistence-unit'
+06:06:34,221 INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] (ServerService Thread Pool -- 65) HHH000227: Running hbm2ddl schema export
+06:06:34,227 INFO  [stdout] (ServerService Thread Pool -- 65) Hibernate: 
+06:06:34,228 INFO  [stdout] (ServerService Thread Pool -- 65)     drop table Member if exists
+06:06:34,233 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015877: Stopped deployment Hamstring.war (runtime-name: Hamstring.war) in 60ms
+06:06:34,235 INFO  [stdout] (ServerService Thread Pool -- 65) Hibernate: 
+06:06:34,235 INFO  [stdout] (ServerService Thread Pool -- 65)     drop sequence if exists hibernate_sequence
+06:06:34,237 INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] (ServerService Thread Pool -- 65) HHH000230: Schema export complete
+06:06:34,239 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+06:06:34,241 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015877: Stopped deployment jboss-forge-html5.war (runtime-name: jboss-forge-html5.war) in 71ms
+06:06:34,246 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) JBAS016009: Stopping weld service for deployment aggregator.war
+06:06:34,244 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 77) JBAS011403: Stopping Persistence Unit Service 'aggregator.war#black'
+06:06:34,264 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) JBAS010409: Unbound data source [java:jboss/datasources/MySQLDS]
+06:06:34,318 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015877: Stopped deployment aggregator.war (runtime-name: aggregator.war) in 147ms
+06:06:34,322 INFO  [org.jboss.as] (MSC service thread 1-5) JBAS015950: JBoss EAP 6.4.0.GA (AS 7.5.0.Final-redhat-21) stopped in 144ms

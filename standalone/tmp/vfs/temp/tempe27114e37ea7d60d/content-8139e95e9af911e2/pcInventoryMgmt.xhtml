@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    JBoss, Home of Professional Open Source
+    Copyright 2013, Red Hat, Inc. and/or its affiliates, and individual
+    contributors by the @authors tag. See the copyright.txt in the
+    distribution for a full listing of individual contributors.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                template="/WEB-INF/templates/default.xhtml">
+    <ui:define name="content">
+        <h:button value="Home" outcome="index"/> <br/>
+
+        <h1>Welcome to WildFly!</h1>
+
+        <div>
+            <p>You have successfully deployed a Java EE 7 Enterprise
+                Application.</p>
+            <h3>Your application can run on:</h3>
+            <img src="resources/gfx/wildfly_400x130.jpg"/>
+        </div>
+
+        <h:form id="reg">
+            <h2>PC Inventory Management</h2>
+            <p>This manual application would be automated in due course. However, Application details would need to supplied manually.</p>
+            <h:panelGrid columns="9" columnClasses="titleCell">
+                <h:outputLabel for="userId" value="User Name:"/>
+                <h:inputText id="userId" value="#{newInventory.userId}"/>
+                <h:message for="userId" errorClass="invalid"/>
+
+                <h:outputLabel for="loginName" value="Login ID:"/>
+                <h:inputText id="loginName" value="#{newInventory.loginName}"/>
+                <h:message for="loginName" errorClass="invalid"/>
+
+                <h:outputLabel for="domain" value="Domain:"/>
+                <h:inputText id="domain"
+                             value="#{newInventory.domain}"/>
+                <h:message for="domain" errorClass="invalid"/>
+
+                <h:outputLabel for="serviceTag" value="Service Tag:"/>
+                <h:inputText id="serviceTag"
+                             value="#{newInventory.serviceTag}"/>
+                <h:message for="serviceTag" errorClass="invalid"/>
+
+                <h:outputLabel for="machine" value="Machine:"/>
+                <h:inputText id="machine"
+                             value="#{newInventory.machine}"/>
+                <h:message for="machine" errorClass="invalid"/>
+
+                <h:outputLabel for="model" value="Model:"/>
+                <h:inputText id="model"
+                             value="#{newInventory.model}"/>
+                <h:message for="model" errorClass="invalid"/>
+
+                <h:outputLabel for="processor" value="Processor:"/>
+                <h:inputText id="processor"
+                             value="#{newInventory.processor}"/>
+                <h:message for="processor" errorClass="invalid"/>
+
+                <h:outputLabel for="ram" value="Ram (GB):"/>
+                <h:inputText id="ram"
+                             value="#{newInventory.ram}"/>
+                <h:message for="ram" errorClass="invalid"/>
+
+                <h:outputLabel for="hdd" value="HDD (GB):"/>
+                <h:inputText id="hdd"
+                             value="#{newInventory.hdd}"/>
+                <h:message for="hdd" errorClass="invalid"/>
+
+                <h:outputLabel for="os" value="Operating System:"/>
+                <h:inputText id="os"
+                             value="#{newInventory.os}"/>
+                <h:message for="os" errorClass="invalid"/>
+
+                <h:outputLabel for="openOffice" value="Open Office:"/>
+                <h:inputText id="openOffice"
+                             value="#{newInventory.openOffice}"/>
+                <h:message for="openOffice" errorClass="invalid"/>
+
+                <h:outputLabel for="mso" value="Microsoft Office:"/>
+                <h:inputText id="mso"
+                             value="#{newInventory.mso}"/>
+                <h:message for="mso" errorClass="invalid"/>
+
+                <h:outputLabel for="antivirus" value="McAfee Version:"/>
+                <h:inputText id="antivirus"
+                             value="#{newInventory.antivirus}"/>
+                <h:message for="antivirus" errorClass="invalid"/>
+
+                <h:outputLabel for="ipAdd" value="IP Address:"/>
+                <h:inputText id="ipAdd"
+                             value="#{newInventory.ipAdd}"/>
+                <h:message for="ipAdd" errorClass="invalid"/>
+
+                <h:outputLabel for="osSerial" value="OS Serial Number:"/>
+                <h:inputText id="osSerial"
+                             value="#{newInventory.osSerial}"/>
+                <h:message for="osSerial" errorClass="invalid"/>
+
+                <h:outputLabel for="lastCheck" value="Last Check:"/>
+                <h:inputText id="lastCheck"
+                             value="#{newInventory.lastCheck}"/>
+                <h:message for="lastCheck" errorClass="invalid"/>
+            </h:panelGrid>
+
+            <p>
+                <h:panelGrid columns="2">
+                    <h:commandButton id="register"
+                                     action="#{pcInventoryController.register}"
+                                     value="Update Inventory" styleClass="register"/>
+                    <h:messages styleClass="messages"
+                                errorClass="invalid" infoClass="valid"
+                                warnClass="warning" globalOnly="true"/>
+                </h:panelGrid>
+            </p>
+        </h:form>
+    </ui:define>
+</ui:composition>
