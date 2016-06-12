@@ -1,0 +1,609 @@
+21:48:58,300 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.6.Final-redhat-1
+21:48:59,806 INFO  [org.jboss.msc] (main) JBoss MSC version 1.1.5.Final-redhat-1
+21:49:00,538 INFO  [org.jboss.as] (MSC service thread 1-7) JBAS015899: JBoss EAP 6.4.0.GA (AS 7.5.0.Final-redhat-21) starting
+21:49:00,555 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/me/Downloads/runtimes/jboss-eap/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/java/jdk1.8.0_65/jre/lib/endorsed
+	java.ext.dirs = /usr/java/jdk1.8.0_65/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/java/jdk1.8.0_65/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_65-b17
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_65
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.65-b01
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = /home/me/Downloads/runtimes/jboss-eap
+	jboss.host.name = localhost
+	jboss.modules.dir = /home/me/Downloads/runtimes/jboss-eap/modules
+	jboss.modules.policy-permissions = true
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = localhost
+	jboss.qualified.host.name = localhost.localdomain
+	jboss.server.base.dir = /home/me/Downloads/runtimes/jboss-eap/standalone
+	jboss.server.config.dir = /home/me/Downloads/runtimes/jboss-eap/standalone/configuration
+	jboss.server.data.dir = /home/me/Downloads/runtimes/jboss-eap/standalone/data
+	jboss.server.deploy.dir = /home/me/Downloads/runtimes/jboss-eap/standalone/data/content
+	jboss.server.log.dir = /home/me/Downloads/runtimes/jboss-eap/standalone/log
+	jboss.server.name = localhost
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/me/Downloads/runtimes/jboss-eap/standalone/tmp
+	jboss.socket.binding.port-offset = 1000
+	line.separator = 
+
+	logging.configuration = file:/home/me/Downloads/runtimes/jboss-eap/standalone/configuration/logging.properties
+	module.path = /home/me/Downloads/runtimes/jboss-eap/modules
+	org.jboss.boot.log.file = /home/me/Downloads/runtimes/jboss-eap/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.4.9-300.fc23.x86_64+debug
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/java/jdk1.8.0_65/jre/lib/resources.jar:/usr/java/jdk1.8.0_65/jre/lib/rt.jar:/usr/java/jdk1.8.0_65/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_65/jre/lib/jsse.jar:/usr/java/jdk1.8.0_65/jre/lib/jce.jar:/usr/java/jdk1.8.0_65/jre/lib/charsets.jar:/usr/java/jdk1.8.0_65/jre/lib/jfr.jar:/usr/java/jdk1.8.0_65/jre/classes
+	sun.boot.library.path = /usr/java/jdk1.8.0_65/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /home/me/Downloads/runtimes/jboss-eap/jboss-modules.jar -mp /home/me/Downloads/runtimes/jboss-eap/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -Djboss.home.dir=/home/me/Downloads/runtimes/jboss-eap -Djboss.server.base.dir=/home/me/Downloads/runtimes/jboss-eap/standalone -Djboss.socket.binding.port-offset=1000
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = GB
+	user.dir = /home/me/Downloads/runtimes/jboss-eap/bin
+	user.home = /home/me
+	user.language = en
+	user.name = me
+	user.timezone = Asia/Kolkata
+21:49:00,556 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -D[Standalone] -XX:+UseCompressedOops -verbose:gc -Xloggc:/home/me/Downloads/runtimes/jboss-eap/standalone/log/gc.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading -Xms1303m -Xmx1303m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Djboss.modules.policy-permissions=true -Dorg.jboss.boot.log.file=/home/me/Downloads/runtimes/jboss-eap/standalone/log/server.log -Dlogging.configuration=file:/home/me/Downloads/runtimes/jboss-eap/standalone/configuration/logging.properties 
+21:49:07,254 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found jboss-forge-html5.war in deployment directory. To trigger deployment create a file called jboss-forge-html5.war.dodeploy
+21:49:07,256 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found Hamstring.war in deployment directory. To trigger deployment create a file called Hamstring.war.dodeploy
+21:49:07,347 INFO  [org.xnio] (MSC service thread 1-6) XNIO Version 3.0.13.GA-redhat-1
+21:49:07,358 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.0.13.GA-redhat-1
+21:49:07,427 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+21:49:07,553 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 3.3.4.Final-redhat-1
+21:49:07,767 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 31) JBAS010280: Activating Infinispan subsystem.
+21:49:07,780 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 39) JBAS011800: Activating Naming Subsystem
+21:49:07,795 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 44) JBAS013371: Activating Security Subsystem
+21:49:07,827 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 37) JBAS012615: Activated the following JSF Implementations: [main, 1.2]
+21:49:07,792 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+21:49:07,971 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+21:49:08,002 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-5) JBAS010408: Starting JCA Subsystem (IronJacamar 1.0.31.Final-redhat-1)
+21:49:08,330 INFO  [org.jboss.as.security] (MSC service thread 1-2) JBAS013370: Current PicketBox version=4.1.1.Final-redhat-1
+21:49:10,544 INFO  [org.jboss.as.naming] (MSC service thread 1-8) JBAS011802: Starting Naming Service
+21:49:10,551 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) JBAS015400: Bound mail session [java:jboss/mail/Default]
+21:49:10,649 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+21:49:10,834 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+21:49:11,903 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) JBAS015012: Started FileSystemDeploymentService for directory /home/me/Downloads/runtimes/jboss-eap/standalone/deployments
+21:49:11,908 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "aggregator.war" (runtime-name: "aggregator.war")
+21:49:11,916 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015876: Starting deployment of "jboss-forge-html5.war" (runtime-name: "jboss-forge-html5.war")
+21:49:11,912 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "Hamstring.war" (runtime-name: "Hamstring.war")
+21:49:12,366 INFO  [org.jboss.as.remoting] (MSC service thread 1-5) JBAS017100: Listening on 127.0.0.1:5447
+21:49:12,366 INFO  [org.jboss.as.remoting] (MSC service thread 1-7) JBAS017100: Listening on 127.0.0.1:10999
+21:49:12,417 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-4) JBWEB003001: Coyote HTTP/1.1 initializing on : http-/127.0.0.1:9080
+21:49:12,471 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-4) JBWEB003000: Coyote HTTP/1.1 starting on: http-/127.0.0.1:9080
+21:49:12,938 INFO  [org.jboss.as.jpa] (MSC service thread 1-5) JBAS011401: Read persistence.xml for jboss-forge-html5-persistence-unit
+21:49:13,584 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+21:49:13,585 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010400: Bound data source [java:jboss/datasources/MySQLDS]
+21:49:13,899 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.4.Final-redhat-1
+21:49:14,116 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 50) JBAS011402: Starting Persistence Unit Service 'jboss-forge-html5.war#jboss-forge-html5-persistence-unit'
+21:49:14,159 INFO  [org.jboss.web] (ServerService Thread Pool -- 56) JBAS018210: Register web context: /Hamstring
+21:49:16,025 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 50) HCANN000001: Hibernate Commons Annotations {4.0.2.Final-redhat-1}
+21:49:16,200 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 50) HHH000412: Hibernate Core {4.2.18.Final-redhat-2}
+21:49:16,326 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 50) HHH000206: hibernate.properties not found
+21:49:16,329 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 50) HHH000021: Bytecode provider name : javassist
+21:49:16,794 INFO  [org.hibernate.ejb.Ejb3Configuration] (ServerService Thread Pool -- 50) HHH000204: Processing PersistenceUnitInfo [
+	name: jboss-forge-html5-persistence-unit
+	...]
+21:49:16,930 WARN  [org.hibernate.ejb.Ejb3Configuration] (ServerService Thread Pool -- 50) HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+21:49:17,004 INFO  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] (ServerService Thread Pool -- 50) HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+21:49:17,675 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 50) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+21:49:17,680 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 50) HHH000431: Unable to determine H2 database version, certain features may not work
+21:49:17,923 INFO  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] (ServerService Thread Pool -- 50) HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jta.CMTTransactionFactory
+21:49:17,938 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 50) HHH000397: Using ASTQueryTranslatorFactory
+21:49:18,408 INFO  [org.jboss.as.jpa] (MSC service thread 1-5) JBAS011401: Read persistence.xml for black
+21:49:18,458 WARN  [org.jboss.as.connector.logging] (MSC service thread 1-5) JBAS010489: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+21:49:18,513 INFO  [org.hibernate.validator.internal.util.Version] (ServerService Thread Pool -- 50) HV000001: Hibernate Validator 4.3.2.Final-redhat-2
+21:49:19,297 WARN  [org.jboss.as.connector.deployer.dsdeployer] (MSC service thread 1-7) JBAS010411: <drivers/> in standalone -ds.xml deployments aren't supported: Ignoring aggregator.war
+21:49:19,309 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010400: Bound data source [java:jboss/datasources/aggregatorMySQLDS]
+21:49:19,309 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010400: Bound data source [java:jboss/datasources/aggregatorH2DS]
+21:49:19,330 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) JBAS016002: Processing weld deployment aggregator.war
+21:49:19,475 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-7) JNDI bindings for session bean named MemberRegistration in deployment unit deployment "aggregator.war" are as follows:
+
+	java:global/aggregator/MemberRegistration!aggregator.service.MemberRegistration
+	java:app/aggregator/MemberRegistration!aggregator.service.MemberRegistration
+	java:module/MemberRegistration!aggregator.service.MemberRegistration
+	java:global/aggregator/MemberRegistration
+	java:app/aggregator/MemberRegistration
+	java:module/MemberRegistration
+
+21:49:19,476 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-7) JNDI bindings for session bean named PcInventoryUpdate in deployment unit deployment "aggregator.war" are as follows:
+
+	java:global/aggregator/PcInventoryUpdate!aggregator.service.PcInventoryUpdate
+	java:app/aggregator/PcInventoryUpdate!aggregator.service.PcInventoryUpdate
+	java:module/PcInventoryUpdate!aggregator.service.PcInventoryUpdate
+	java:global/aggregator/PcInventoryUpdate
+	java:app/aggregator/PcInventoryUpdate
+	java:module/PcInventoryUpdate
+
+21:49:20,306 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+21:49:20,308 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.fabric.jdbc.FabricMySQLDriver (version 5.1)
+21:49:20,309 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) JBAS016005: Starting Services for CDI deployment: aggregator.war
+21:49:20,831 INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] (ServerService Thread Pool -- 50) HHH000227: Running hbm2ddl schema export
+21:49:20,836 INFO  [stdout] (ServerService Thread Pool -- 50) Hibernate: 
+21:49:20,837 INFO  [stdout] (ServerService Thread Pool -- 50)     drop table Member if exists
+21:49:20,837 INFO  [stdout] (ServerService Thread Pool -- 50) Hibernate: 
+21:49:20,837 INFO  [stdout] (ServerService Thread Pool -- 50)     drop sequence if exists hibernate_sequence
+21:49:20,838 INFO  [stdout] (ServerService Thread Pool -- 50) Hibernate: 
+21:49:20,838 INFO  [stdout] (ServerService Thread Pool -- 50)     create table Member (
+21:49:20,839 INFO  [stdout] (ServerService Thread Pool -- 50)         id bigint not null,
+21:49:20,839 INFO  [stdout] (ServerService Thread Pool -- 50)         full_name varchar(25) not null,
+21:49:20,839 INFO  [stdout] (ServerService Thread Pool -- 50)         phone_number varchar(12) not null,
+21:49:20,839 INFO  [stdout] (ServerService Thread Pool -- 50)         primary key (id)
+21:49:20,839 INFO  [stdout] (ServerService Thread Pool -- 50)     )
+21:49:20,840 INFO  [stdout] (ServerService Thread Pool -- 50) Hibernate: 
+21:49:20,840 INFO  [stdout] (ServerService Thread Pool -- 50)     create sequence hibernate_sequence start with 1 increment by 1
+21:49:20,841 INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] (ServerService Thread Pool -- 50) HHH000230: Schema export complete
+21:49:21,003 INFO  [org.jboss.web] (ServerService Thread Pool -- 56) JBAS018210: Register web context: /jboss-forge-html5
+21:49:21,168 INFO  [org.jboss.weld.Version] (MSC service thread 1-1) WELD-000900 1.1.28 (redhat)
+21:49:21,181 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) JBAS016008: Starting weld service for deployment aggregator.war
+21:49:21,184 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 56) JBAS011402: Starting Persistence Unit Service 'aggregator.war#black'
+21:49:21,185 INFO  [org.hibernate.ejb.Ejb3Configuration] (ServerService Thread Pool -- 56) HHH000204: Processing PersistenceUnitInfo [
+	name: black
+	...]
+21:49:21,232 INFO  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] (ServerService Thread Pool -- 56) HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+21:49:25,869 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 56) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+21:49:26,015 INFO  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] (ServerService Thread Pool -- 56) HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jta.CMTTransactionFactory
+21:49:26,091 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 56) HHH000397: Using ASTQueryTranslatorFactory
+21:49:26,188 INFO  [org.hibernate.cache.spi.UpdateTimestampsCache] (ServerService Thread Pool -- 56) HHH000250: Starting update timestamps cache at region: aggregator.war#black.org.hibernate.cache.spi.UpdateTimestampsCache
+21:49:26,191 WARN  [org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory] (ServerService Thread Pool -- 56) HHH020003: Could not find a specific ehcache configuration for cache named [aggregator.war#black.org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+21:49:26,194 INFO  [org.hibernate.cache.internal.StandardQueryCache] (ServerService Thread Pool -- 56) HHH000248: Starting query cache at region: aggregator.war#black.org.hibernate.cache.internal.StandardQueryCache
+21:49:26,195 WARN  [org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory] (ServerService Thread Pool -- 56) HHH020003: Could not find a specific ehcache configuration for cache named [aggregator.war#black.org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+21:49:26,473 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 56) HHH000228: Running hbm2ddl schema update
+21:49:26,473 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 56) HHH000102: Fetching database metadata
+21:49:26,474 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 56) HHH000396: Updating schema
+21:49:28,011 INFO  [net.sf.ehcache.util.UpdateChecker] (net.sf.ehcache.CacheManager@49ef3ed0) New update(s) found: 2.4.7 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.4]. Please check http://ehcache.org for the latest version.
+21:49:29,311 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000261: Table found: reports.Member
+21:49:29,312 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000037: Columns: [name, phone_number, id, email]
+21:49:29,312 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000108: Foreign keys: []
+21:49:29,312 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000126: Indexes: [uk_9qv6yhjqm8iafto8qk452gx8h, primary]
+21:49:29,612 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000261: Table found: reports.inventory_mgmt
+21:49:29,613 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000037: Columns: [open_office, service_tag, sr_no, ms_office_version, ip_add, os_serial, processor, ram_gb, login_name, mcafee_version, user_id, machine, domain, operating_system, model, hdd_gb, last_check]
+21:49:29,613 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000108: Foreign keys: []
+21:49:29,614 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000126: Indexes: [uk_afjwui8oq7fjb0ptqkxnt2829, inventory_mgmt_login_name_uindex, primary]
+21:49:29,795 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000261: Table found: reports.hibernate_sequence
+21:49:29,795 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000037: Columns: [next_val]
+21:49:29,795 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000108: Foreign keys: []
+21:49:29,796 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000126: Indexes: []
+21:49:29,796 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 56) HHH000232: Schema update complete
+21:49:31,336 INFO  [org.jboss.web] (ServerService Thread Pool -- 56) JBAS018210: Register web context: /aggregator
+21:49:31,977 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 56) Initializing Mojarra 2.1.28-jbossorg-6  for context '/aggregator'
+21:49:34,905 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015859: Deployed "aggregator.war" (runtime-name : "aggregator.war")
+21:49:34,906 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS015859: Deployed "jboss-forge-html5.war" (runtime-name : "jboss-forge-html5.war")
+21:49:34,906 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS015859: Deployed "Hamstring.war" (runtime-name : "Hamstring.war")
+21:49:35,346 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:10990/management
+21:49:35,346 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:10990
+21:49:35,346 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: JBoss EAP 6.4.0.GA (AS 7.5.0.Final-redhat-21) started in 40148ms - Started 378 of 415 services (66 services are lazy, passive or on-demand)
+21:52:36,679 INFO  [stdout] (http-/127.0.0.1:9080-1) Hibernate: 
+21:52:36,680 INFO  [stdout] (http-/127.0.0.1:9080-1)     /* select
+21:52:36,680 INFO  [stdout] (http-/127.0.0.1:9080-1)         generatedAlias0 
+21:52:36,680 INFO  [stdout] (http-/127.0.0.1:9080-1)     from
+21:52:36,680 INFO  [stdout] (http-/127.0.0.1:9080-1)         Member as generatedAlias0 
+21:52:36,681 INFO  [stdout] (http-/127.0.0.1:9080-1)     order by
+21:52:36,681 INFO  [stdout] (http-/127.0.0.1:9080-1)         generatedAlias0.name asc */ select
+21:52:36,681 INFO  [stdout] (http-/127.0.0.1:9080-1)             member0_.id as id1_0_,
+21:52:36,682 INFO  [stdout] (http-/127.0.0.1:9080-1)             member0_.email as email2_0_,
+21:52:36,682 INFO  [stdout] (http-/127.0.0.1:9080-1)             member0_.name as name3_0_,
+21:52:36,683 INFO  [stdout] (http-/127.0.0.1:9080-1)             member0_.phone_number as phone_nu4_0_ 
+21:52:36,683 INFO  [stdout] (http-/127.0.0.1:9080-1)         from
+21:52:36,683 INFO  [stdout] (http-/127.0.0.1:9080-1)             Member member0_ 
+21:52:36,684 INFO  [stdout] (http-/127.0.0.1:9080-1)         order by
+21:52:36,684 INFO  [stdout] (http-/127.0.0.1:9080-1)             member0_.name asc
+21:52:57,977 INFO  [stdout] (http-/127.0.0.1:9080-1) Hibernate: 
+21:52:57,978 INFO  [stdout] (http-/127.0.0.1:9080-1)     /* select
+21:52:57,978 INFO  [stdout] (http-/127.0.0.1:9080-1)         generatedAlias0 
+21:52:57,978 INFO  [stdout] (http-/127.0.0.1:9080-1)     from
+21:52:57,978 INFO  [stdout] (http-/127.0.0.1:9080-1)         Member as generatedAlias0 
+21:52:57,978 INFO  [stdout] (http-/127.0.0.1:9080-1)     order by
+21:52:57,979 INFO  [stdout] (http-/127.0.0.1:9080-1)         generatedAlias0.name asc */ select
+21:52:57,979 INFO  [stdout] (http-/127.0.0.1:9080-1)             member0_.id as id1_0_,
+21:52:57,979 INFO  [stdout] (http-/127.0.0.1:9080-1)             member0_.email as email2_0_,
+21:52:57,979 INFO  [stdout] (http-/127.0.0.1:9080-1)             member0_.name as name3_0_,
+21:52:57,979 INFO  [stdout] (http-/127.0.0.1:9080-1)             member0_.phone_number as phone_nu4_0_ 
+21:52:57,980 INFO  [stdout] (http-/127.0.0.1:9080-1)         from
+21:52:57,980 INFO  [stdout] (http-/127.0.0.1:9080-1)             Member member0_ 
+21:52:57,980 INFO  [stdout] (http-/127.0.0.1:9080-1)         order by
+21:52:57,980 INFO  [stdout] (http-/127.0.0.1:9080-1)             member0_.name asc
+21:52:58,063 INFO  [aggregator.service.MemberRegistration] (http-/127.0.0.1:9080-1) Registering asds
+21:52:58,089 INFO  [stdout] (http-/127.0.0.1:9080-1) Hibernate: 
+21:52:58,089 INFO  [stdout] (http-/127.0.0.1:9080-1)     select
+21:52:58,089 INFO  [stdout] (http-/127.0.0.1:9080-1)         next_val as id_val 
+21:52:58,090 INFO  [stdout] (http-/127.0.0.1:9080-1)     from
+21:52:58,090 INFO  [stdout] (http-/127.0.0.1:9080-1)         hibernate_sequence for update
+21:52:58,090 INFO  [stdout] (http-/127.0.0.1:9080-1)             
+21:52:58,136 INFO  [stdout] (http-/127.0.0.1:9080-1) Hibernate: 
+21:52:58,136 INFO  [stdout] (http-/127.0.0.1:9080-1)     update
+21:52:58,136 INFO  [stdout] (http-/127.0.0.1:9080-1)         hibernate_sequence 
+21:52:58,136 INFO  [stdout] (http-/127.0.0.1:9080-1)     set
+21:52:58,137 INFO  [stdout] (http-/127.0.0.1:9080-1)         next_val= ? 
+21:52:58,137 INFO  [stdout] (http-/127.0.0.1:9080-1)     where
+21:52:58,137 INFO  [stdout] (http-/127.0.0.1:9080-1)         next_val=?
+21:52:58,363 INFO  [stdout] (http-/127.0.0.1:9080-1) Hibernate: 
+21:52:58,363 INFO  [stdout] (http-/127.0.0.1:9080-1)     /* insert aggregator.model.Member
+21:52:58,364 INFO  [stdout] (http-/127.0.0.1:9080-1)         */ insert 
+21:52:58,364 INFO  [stdout] (http-/127.0.0.1:9080-1)         into
+21:52:58,364 INFO  [stdout] (http-/127.0.0.1:9080-1)             Member
+21:52:58,364 INFO  [stdout] (http-/127.0.0.1:9080-1)             (email, name, phone_number, id) 
+21:52:58,364 INFO  [stdout] (http-/127.0.0.1:9080-1)         values
+21:52:58,364 INFO  [stdout] (http-/127.0.0.1:9080-1)             (?, ?, ?, ?)
+21:52:58,397 INFO  [stdout] (http-/127.0.0.1:9080-1) Hibernate: 
+21:52:58,397 INFO  [stdout] (http-/127.0.0.1:9080-1)     /* select
+21:52:58,397 INFO  [stdout] (http-/127.0.0.1:9080-1)         generatedAlias0 
+21:52:58,397 INFO  [stdout] (http-/127.0.0.1:9080-1)     from
+21:52:58,398 INFO  [stdout] (http-/127.0.0.1:9080-1)         Member as generatedAlias0 
+21:52:58,398 INFO  [stdout] (http-/127.0.0.1:9080-1)     order by
+21:52:58,398 INFO  [stdout] (http-/127.0.0.1:9080-1)         generatedAlias0.name asc */ select
+21:52:58,398 INFO  [stdout] (http-/127.0.0.1:9080-1)             member0_.id as id1_0_,
+21:52:58,398 INFO  [stdout] (http-/127.0.0.1:9080-1)             member0_.email as email2_0_,
+21:52:58,398 INFO  [stdout] (http-/127.0.0.1:9080-1)             member0_.name as name3_0_,
+21:52:58,398 INFO  [stdout] (http-/127.0.0.1:9080-1)             member0_.phone_number as phone_nu4_0_ 
+21:52:58,398 INFO  [stdout] (http-/127.0.0.1:9080-1)         from
+21:52:58,399 INFO  [stdout] (http-/127.0.0.1:9080-1)             Member member0_ 
+21:52:58,399 INFO  [stdout] (http-/127.0.0.1:9080-1)         order by
+21:52:58,399 INFO  [stdout] (http-/127.0.0.1:9080-1)             member0_.name asc
+21:53:27,686 INFO  [aggregator.service.PcInventoryUpdate] (http-/127.0.0.1:9080-1) Updating Inventoryas
+21:53:27,687 INFO  [stdout] (http-/127.0.0.1:9080-1) Hibernate: 
+21:53:27,687 INFO  [stdout] (http-/127.0.0.1:9080-1)     select
+21:53:27,687 INFO  [stdout] (http-/127.0.0.1:9080-1)         next_val as id_val 
+21:53:27,687 INFO  [stdout] (http-/127.0.0.1:9080-1)     from
+21:53:27,687 INFO  [stdout] (http-/127.0.0.1:9080-1)         hibernate_sequence for update
+21:53:27,687 INFO  [stdout] (http-/127.0.0.1:9080-1)             
+21:53:27,688 INFO  [stdout] (http-/127.0.0.1:9080-1) Hibernate: 
+21:53:27,689 INFO  [stdout] (http-/127.0.0.1:9080-1)     update
+21:53:27,689 INFO  [stdout] (http-/127.0.0.1:9080-1)         hibernate_sequence 
+21:53:27,689 INFO  [stdout] (http-/127.0.0.1:9080-1)     set
+21:53:27,689 INFO  [stdout] (http-/127.0.0.1:9080-1)         next_val= ? 
+21:53:27,689 INFO  [stdout] (http-/127.0.0.1:9080-1)     where
+21:53:27,689 INFO  [stdout] (http-/127.0.0.1:9080-1)         next_val=?
+21:53:27,810 INFO  [stdout] (http-/127.0.0.1:9080-1) Hibernate: 
+21:53:27,810 INFO  [stdout] (http-/127.0.0.1:9080-1)     /* insert aggregator.model.PcInventory
+21:53:27,810 INFO  [stdout] (http-/127.0.0.1:9080-1)         */ insert 
+21:53:27,810 INFO  [stdout] (http-/127.0.0.1:9080-1)         into
+21:53:27,810 INFO  [stdout] (http-/127.0.0.1:9080-1)             inventory_mgmt
+21:53:27,811 INFO  [stdout] (http-/127.0.0.1:9080-1)             (McAfee_Version, Domain, Hdd_Gb, Ip_add, Last_check, Login_Name, Machine, Model, MS_Office_Version, Open_Office, Operating_System, Os_Serial, Processor, Ram_Gb, Service_Tag, User_Id, Sr_No) 
+21:53:27,811 INFO  [stdout] (http-/127.0.0.1:9080-1)         values
+21:53:27,811 INFO  [stdout] (http-/127.0.0.1:9080-1)             (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+21:53:27,831 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (http-/127.0.0.1:9080-1) SQL Error: 1366, SQLState: 22001
+21:53:27,831 ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (http-/127.0.0.1:9080-1) Data truncation: Incorrect integer value: 'as' for column 'Hdd_Gb' at row 1
+21:53:27,832 INFO  [org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl] (http-/127.0.0.1:9080-1) HHH000010: On release of batch it still contained JDBC statements
+21:53:27,834 WARN  [com.arjuna.ats.arjuna] (http-/127.0.0.1:9080-1) ARJUNA012125: TwoPhaseCoordinator.beforeCompletion - failed for SynchronizationImple< 0:ffff7f000001:568217b5:5756f3ff:22, org.hibernate.engine.transaction.synchronization.internal.RegisteredSynchronization@cb3f1df >: javax.persistence.PersistenceException: org.hibernate.exception.DataException: could not execute statement
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1387) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1310) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1316) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.AbstractEntityManagerImpl$CallbackExceptionMapperImpl.mapManagedFlushFailure(AbstractEntityManagerImpl.java:1510) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.transaction.synchronization.internal.SynchronizationCallbackCoordinatorNonTrackingImpl.beforeCompletion(SynchronizationCallbackCoordinatorNonTrackingImpl.java:114) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.transaction.synchronization.internal.RegisteredSynchronization.beforeCompletion(RegisteredSynchronization.java:53) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at com.arjuna.ats.internal.jta.resources.arjunacore.SynchronizationImple.beforeCompletion(SynchronizationImple.java:76)
+	at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.beforeCompletion(TwoPhaseCoordinator.java:273)
+	at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.end(TwoPhaseCoordinator.java:93)
+	at com.arjuna.ats.arjuna.AtomicAction.commit(AtomicAction.java:162)
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1189)
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.BaseTransaction.commit(BaseTransaction.java:126)
+	at com.arjuna.ats.jbossatx.BaseTransactionManagerDelegate.commit(BaseTransactionManagerDelegate.java:75)
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.endTransaction(CMTTxInterceptor.java:92) [jboss-as-ejb3-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:284) [jboss-as-ejb3-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.required(CMTTxInterceptor.java:345) [jboss-as-ejb3-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.processInvocation(CMTTxInterceptor.java:243) [jboss-as-ejb3-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288) [jboss-invocation-1.1.2.Final-redhat-1.jar:1.1.2.Final-redhat-1]
+	at org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:41) [jboss-as-ejb3-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288) [jboss-invocation-1.1.2.Final-redhat-1.jar:1.1.2.Final-redhat-1]
+	at org.jboss.as.ejb3.component.invocationmetrics.WaitTimeInterceptor.processInvocation(WaitTimeInterceptor.java:43) [jboss-as-ejb3-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288) [jboss-invocation-1.1.2.Final-redhat-1.jar:1.1.2.Final-redhat-1]
+	at org.jboss.as.ejb3.component.interceptors.ShutDownInterceptorFactory$1.processInvocation(ShutDownInterceptorFactory.java:64) [jboss-as-ejb3-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288) [jboss-invocation-1.1.2.Final-redhat-1.jar:1.1.2.Final-redhat-1]
+	at org.jboss.as.ejb3.component.interceptors.LoggingInterceptor.processInvocation(LoggingInterceptor.java:59) [jboss-as-ejb3-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288) [jboss-invocation-1.1.2.Final-redhat-1.jar:1.1.2.Final-redhat-1]
+	at org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:50) [jboss-as-ee-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288) [jboss-invocation-1.1.2.Final-redhat-1.jar:1.1.2.Final-redhat-1]
+	at org.jboss.as.ejb3.component.interceptors.AdditionalSetupInterceptor.processInvocation(AdditionalSetupInterceptor.java:55) [jboss-as-ejb3-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288) [jboss-invocation-1.1.2.Final-redhat-1.jar:1.1.2.Final-redhat-1]
+	at org.jboss.as.ee.component.TCCLInterceptor.processInvocation(TCCLInterceptor.java:45) [jboss-as-ee-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288) [jboss-invocation-1.1.2.Final-redhat-1.jar:1.1.2.Final-redhat-1]
+	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61) [jboss-invocation-1.1.2.Final-redhat-1.jar:1.1.2.Final-redhat-1]
+	at org.jboss.as.ee.component.ViewService$View.invoke(ViewService.java:185) [jboss-as-ee-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.ee.component.ViewDescription$1.processInvocation(ViewDescription.java:185) [jboss-as-ee-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288) [jboss-invocation-1.1.2.Final-redhat-1.jar:1.1.2.Final-redhat-1]
+	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61) [jboss-invocation-1.1.2.Final-redhat-1.jar:1.1.2.Final-redhat-1]
+	at org.jboss.as.ee.component.ProxyInvocationHandler.invoke(ProxyInvocationHandler.java:73) [jboss-as-ee-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at aggregator.service.PcInventoryUpdate$$$view2.register(Unknown Source) [classes:]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Method.invoke(Method.java:497) [rt.jar:1.8.0_65]
+	at org.jboss.weld.util.reflection.SecureReflections$13.work(SecureReflections.java:267) [weld-core-1.1.28.Final-redhat-1.jar:1.1.28.Final-redhat-1]
+	at org.jboss.weld.util.reflection.SecureReflectionAccess.run(SecureReflectionAccess.java:52) [weld-core-1.1.28.Final-redhat-1.jar:1.1.28.Final-redhat-1]
+	at org.jboss.weld.util.reflection.SecureReflectionAccess.runAsInvocation(SecureReflectionAccess.java:137) [weld-core-1.1.28.Final-redhat-1.jar:1.1.28.Final-redhat-1]
+	at org.jboss.weld.util.reflection.SecureReflections.invoke(SecureReflections.java:263) [weld-core-1.1.28.Final-redhat-1.jar:1.1.28.Final-redhat-1]
+	at org.jboss.weld.bean.proxy.EnterpriseBeanProxyMethodHandler.invoke(EnterpriseBeanProxyMethodHandler.java:115) [weld-core-1.1.28.Final-redhat-1.jar:1.1.28.Final-redhat-1]
+	at org.jboss.weld.bean.proxy.EnterpriseTargetBeanInstance.invoke(EnterpriseTargetBeanInstance.java:56) [weld-core-1.1.28.Final-redhat-1.jar:1.1.28.Final-redhat-1]
+	at org.jboss.weld.bean.proxy.ProxyMethodHandler.invoke(ProxyMethodHandler.java:105) [weld-core-1.1.28.Final-redhat-1.jar:1.1.28.Final-redhat-1]
+	at aggregator.service.PcInventoryUpdate$Proxy$_$$_Weld$Proxy$.register(PcInventoryUpdate$Proxy$_$$_Weld$Proxy$.java) [classes:]
+	at aggregator.controller.PcInventoryController.register(PcInventoryController.java:54) [classes:]
+	at aggregator.controller.PcInventoryController$Proxy$_$$_WeldClientProxy.register(PcInventoryController$Proxy$_$$_WeldClientProxy.java) [classes:]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Method.invoke(Method.java:497) [rt.jar:1.8.0_65]
+	at org.apache.el.parser.AstValue.invoke(AstValue.java:258) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.el.MethodExpressionImpl.invoke(MethodExpressionImpl.java:278) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.jboss.weld.util.el.ForwardingMethodExpression.invoke(ForwardingMethodExpression.java:40) [weld-core-1.1.28.Final-redhat-1.jar:1.1.28.Final-redhat-1]
+	at org.jboss.weld.el.WeldMethodExpression.invoke(WeldMethodExpression.java:50) [weld-core-1.1.28.Final-redhat-1.jar:1.1.28.Final-redhat-1]
+	at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:105) [jsf-impl-2.1.28.redhat-8.jar:2.1.28.redhat-8]
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:87) [jboss-jsf-api_2.1_spec-2.1.28.Final-redhat-1.jar:2.1.28.Final-redhat-1]
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:101) [jsf-impl-2.1.28.redhat-8.jar:2.1.28.redhat-8]
+	at javax.faces.component.UICommand.broadcast(UICommand.java:315) [jboss-jsf-api_2.1_spec-2.1.28.Final-redhat-1.jar:2.1.28.Final-redhat-1]
+	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:786) [jboss-jsf-api_2.1_spec-2.1.28.Final-redhat-1.jar:2.1.28.Final-redhat-1]
+	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1251) [jboss-jsf-api_2.1_spec-2.1.28.Final-redhat-1.jar:2.1.28.Final-redhat-1]
+	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:81) [jsf-impl-2.1.28.redhat-8.jar:2.1.28.redhat-8]
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101) [jsf-impl-2.1.28.redhat-8.jar:2.1.28.redhat-8]
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:118) [jsf-impl-2.1.28.redhat-8.jar:2.1.28.redhat-8]
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:593) [jboss-jsf-api_2.1_spec-2.1.28.Final-redhat-1.jar:2.1.28.Final-redhat-1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:295) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:214) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:231) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:149) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.jboss.as.jpa.interceptor.WebNonTxEmCloserValve.invoke(WebNonTxEmCloserValve.java:50) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.interceptor.WebNonTxEmCloserValve.invoke(WebNonTxEmCloserValve.java:50) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.web.security.SecurityContextAssociationValve.invoke(SecurityContextAssociationValve.java:169) [jboss-as-web-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:150) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:97) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:102) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:854) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:653) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:926) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_65]
+Caused by: org.hibernate.exception.DataException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:71) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:49) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:124) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:109) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:189) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:59) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3079) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3521) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:88) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:395) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:387) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:303) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:349) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:56) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1195) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:404) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.transaction.synchronization.internal.SynchronizationCallbackCoordinatorNonTrackingImpl.beforeCompletion(SynchronizationCallbackCoordinatorNonTrackingImpl.java:109) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	... 81 more
+Caused by: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect integer value: 'as' for column 'Hdd_Gb' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4224) [mysql-connector-java-5.1.31.jar:]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4158) [mysql-connector-java-5.1.31.jar:]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2615) [mysql-connector-java-5.1.31.jar:]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2776) [mysql-connector-java-5.1.31.jar:]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2840) [mysql-connector-java-5.1.31.jar:]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2082) [mysql-connector-java-5.1.31.jar:]
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2334) [mysql-connector-java-5.1.31.jar:]
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2262) [mysql-connector-java-5.1.31.jar:]
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2246) [mysql-connector-java-5.1.31.jar:]
+	at org.jboss.jca.adapters.jdbc.WrappedPreparedStatement.executeUpdate(WrappedPreparedStatement.java:493)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:186) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	... 93 more
+
+21:53:27,862 ERROR [org.jboss.as.ejb3.invocation] (http-/127.0.0.1:9080-1) JBAS014134: EJB Invocation failed on component PcInventoryUpdate for method public void aggregator.service.PcInventoryUpdate.register(aggregator.model.PcInventory) throws java.lang.Exception: javax.ejb.EJBTransactionRolledbackException: Transaction rolled back
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.handleEndTransactionException(CMTTxInterceptor.java:138) [jboss-as-ejb3-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.endTransaction(CMTTxInterceptor.java:118) [jboss-as-ejb3-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:284) [jboss-as-ejb3-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.required(CMTTxInterceptor.java:345) [jboss-as-ejb3-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.processInvocation(CMTTxInterceptor.java:243) [jboss-as-ejb3-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288) [jboss-invocation-1.1.2.Final-redhat-1.jar:1.1.2.Final-redhat-1]
+	at org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:41) [jboss-as-ejb3-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288) [jboss-invocation-1.1.2.Final-redhat-1.jar:1.1.2.Final-redhat-1]
+	at org.jboss.as.ejb3.component.invocationmetrics.WaitTimeInterceptor.processInvocation(WaitTimeInterceptor.java:43) [jboss-as-ejb3-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288) [jboss-invocation-1.1.2.Final-redhat-1.jar:1.1.2.Final-redhat-1]
+	at org.jboss.as.ejb3.component.interceptors.ShutDownInterceptorFactory$1.processInvocation(ShutDownInterceptorFactory.java:64) [jboss-as-ejb3-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288) [jboss-invocation-1.1.2.Final-redhat-1.jar:1.1.2.Final-redhat-1]
+	at org.jboss.as.ejb3.component.interceptors.LoggingInterceptor.processInvocation(LoggingInterceptor.java:59) [jboss-as-ejb3-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288) [jboss-invocation-1.1.2.Final-redhat-1.jar:1.1.2.Final-redhat-1]
+	at org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:50) [jboss-as-ee-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288) [jboss-invocation-1.1.2.Final-redhat-1.jar:1.1.2.Final-redhat-1]
+	at org.jboss.as.ejb3.component.interceptors.AdditionalSetupInterceptor.processInvocation(AdditionalSetupInterceptor.java:55) [jboss-as-ejb3-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288) [jboss-invocation-1.1.2.Final-redhat-1.jar:1.1.2.Final-redhat-1]
+	at org.jboss.as.ee.component.TCCLInterceptor.processInvocation(TCCLInterceptor.java:45) [jboss-as-ee-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288) [jboss-invocation-1.1.2.Final-redhat-1.jar:1.1.2.Final-redhat-1]
+	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61) [jboss-invocation-1.1.2.Final-redhat-1.jar:1.1.2.Final-redhat-1]
+	at org.jboss.as.ee.component.ViewService$View.invoke(ViewService.java:185) [jboss-as-ee-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.ee.component.ViewDescription$1.processInvocation(ViewDescription.java:185) [jboss-as-ee-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:288) [jboss-invocation-1.1.2.Final-redhat-1.jar:1.1.2.Final-redhat-1]
+	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61) [jboss-invocation-1.1.2.Final-redhat-1.jar:1.1.2.Final-redhat-1]
+	at org.jboss.as.ee.component.ProxyInvocationHandler.invoke(ProxyInvocationHandler.java:73) [jboss-as-ee-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at aggregator.service.PcInventoryUpdate$$$view2.register(Unknown Source) [classes:]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Method.invoke(Method.java:497) [rt.jar:1.8.0_65]
+	at org.jboss.weld.util.reflection.SecureReflections$13.work(SecureReflections.java:267) [weld-core-1.1.28.Final-redhat-1.jar:1.1.28.Final-redhat-1]
+	at org.jboss.weld.util.reflection.SecureReflectionAccess.run(SecureReflectionAccess.java:52) [weld-core-1.1.28.Final-redhat-1.jar:1.1.28.Final-redhat-1]
+	at org.jboss.weld.util.reflection.SecureReflectionAccess.runAsInvocation(SecureReflectionAccess.java:137) [weld-core-1.1.28.Final-redhat-1.jar:1.1.28.Final-redhat-1]
+	at org.jboss.weld.util.reflection.SecureReflections.invoke(SecureReflections.java:263) [weld-core-1.1.28.Final-redhat-1.jar:1.1.28.Final-redhat-1]
+	at org.jboss.weld.bean.proxy.EnterpriseBeanProxyMethodHandler.invoke(EnterpriseBeanProxyMethodHandler.java:115) [weld-core-1.1.28.Final-redhat-1.jar:1.1.28.Final-redhat-1]
+	at org.jboss.weld.bean.proxy.EnterpriseTargetBeanInstance.invoke(EnterpriseTargetBeanInstance.java:56) [weld-core-1.1.28.Final-redhat-1.jar:1.1.28.Final-redhat-1]
+	at org.jboss.weld.bean.proxy.ProxyMethodHandler.invoke(ProxyMethodHandler.java:105) [weld-core-1.1.28.Final-redhat-1.jar:1.1.28.Final-redhat-1]
+	at aggregator.service.PcInventoryUpdate$Proxy$_$$_Weld$Proxy$.register(PcInventoryUpdate$Proxy$_$$_Weld$Proxy$.java) [classes:]
+	at aggregator.controller.PcInventoryController.register(PcInventoryController.java:54) [classes:]
+	at aggregator.controller.PcInventoryController$Proxy$_$$_WeldClientProxy.register(PcInventoryController$Proxy$_$$_WeldClientProxy.java) [classes:]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.8.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) [rt.jar:1.8.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.8.0_65]
+	at java.lang.reflect.Method.invoke(Method.java:497) [rt.jar:1.8.0_65]
+	at org.apache.el.parser.AstValue.invoke(AstValue.java:258) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.el.MethodExpressionImpl.invoke(MethodExpressionImpl.java:278) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.jboss.weld.util.el.ForwardingMethodExpression.invoke(ForwardingMethodExpression.java:40) [weld-core-1.1.28.Final-redhat-1.jar:1.1.28.Final-redhat-1]
+	at org.jboss.weld.el.WeldMethodExpression.invoke(WeldMethodExpression.java:50) [weld-core-1.1.28.Final-redhat-1.jar:1.1.28.Final-redhat-1]
+	at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:105) [jsf-impl-2.1.28.redhat-8.jar:2.1.28.redhat-8]
+	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:87) [jboss-jsf-api_2.1_spec-2.1.28.Final-redhat-1.jar:2.1.28.Final-redhat-1]
+	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:101) [jsf-impl-2.1.28.redhat-8.jar:2.1.28.redhat-8]
+	at javax.faces.component.UICommand.broadcast(UICommand.java:315) [jboss-jsf-api_2.1_spec-2.1.28.Final-redhat-1.jar:2.1.28.Final-redhat-1]
+	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:786) [jboss-jsf-api_2.1_spec-2.1.28.Final-redhat-1.jar:2.1.28.Final-redhat-1]
+	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1251) [jboss-jsf-api_2.1_spec-2.1.28.Final-redhat-1.jar:2.1.28.Final-redhat-1]
+	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:81) [jsf-impl-2.1.28.redhat-8.jar:2.1.28.redhat-8]
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101) [jsf-impl-2.1.28.redhat-8.jar:2.1.28.redhat-8]
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:118) [jsf-impl-2.1.28.redhat-8.jar:2.1.28.redhat-8]
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:593) [jboss-jsf-api_2.1_spec-2.1.28.Final-redhat-1.jar:2.1.28.Final-redhat-1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:295) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:214) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:231) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:149) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.jboss.as.jpa.interceptor.WebNonTxEmCloserValve.invoke(WebNonTxEmCloserValve.java:50) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.jpa.interceptor.WebNonTxEmCloserValve.invoke(WebNonTxEmCloserValve.java:50) [jboss-as-jpa-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.jboss.as.web.security.SecurityContextAssociationValve.invoke(SecurityContextAssociationValve.java:169) [jboss-as-web-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:150) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:97) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:102) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:854) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:653) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:926) [jbossweb-7.5.7.Final-redhat-1.jar:7.5.7.Final-redhat-1]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_65]
+Caused by: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1201)
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.BaseTransaction.commit(BaseTransaction.java:126)
+	at com.arjuna.ats.jbossatx.BaseTransactionManagerDelegate.commit(BaseTransactionManagerDelegate.java:75)
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.endTransaction(CMTTxInterceptor.java:92) [jboss-as-ejb3-7.5.0.Final-redhat-21.jar:7.5.0.Final-redhat-21]
+	... 72 more
+Caused by: javax.persistence.PersistenceException: org.hibernate.exception.DataException: could not execute statement
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1387) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1310) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1316) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.ejb.AbstractEntityManagerImpl$CallbackExceptionMapperImpl.mapManagedFlushFailure(AbstractEntityManagerImpl.java:1510) [hibernate-entitymanager-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.transaction.synchronization.internal.SynchronizationCallbackCoordinatorNonTrackingImpl.beforeCompletion(SynchronizationCallbackCoordinatorNonTrackingImpl.java:114) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.transaction.synchronization.internal.RegisteredSynchronization.beforeCompletion(RegisteredSynchronization.java:53) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at com.arjuna.ats.internal.jta.resources.arjunacore.SynchronizationImple.beforeCompletion(SynchronizationImple.java:76)
+	at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.beforeCompletion(TwoPhaseCoordinator.java:273)
+	at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.end(TwoPhaseCoordinator.java:93)
+	at com.arjuna.ats.arjuna.AtomicAction.commit(AtomicAction.java:162)
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1189)
+	... 75 more
+Caused by: org.hibernate.exception.DataException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:71) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:49) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:124) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:109) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:189) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:59) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3079) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3521) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:88) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:395) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:387) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:303) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:349) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:56) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1195) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:404) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	at org.hibernate.engine.transaction.synchronization.internal.SynchronizationCallbackCoordinatorNonTrackingImpl.beforeCompletion(SynchronizationCallbackCoordinatorNonTrackingImpl.java:109) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	... 81 more
+Caused by: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect integer value: 'as' for column 'Hdd_Gb' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4224) [mysql-connector-java-5.1.31.jar:]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4158) [mysql-connector-java-5.1.31.jar:]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2615) [mysql-connector-java-5.1.31.jar:]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2776) [mysql-connector-java-5.1.31.jar:]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2840) [mysql-connector-java-5.1.31.jar:]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2082) [mysql-connector-java-5.1.31.jar:]
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2334) [mysql-connector-java-5.1.31.jar:]
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2262) [mysql-connector-java-5.1.31.jar:]
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2246) [mysql-connector-java-5.1.31.jar:]
+	at org.jboss.jca.adapters.jdbc.WrappedPreparedStatement.executeUpdate(WrappedPreparedStatement.java:493)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:186) [hibernate-core-4.2.18.Final-redhat-2.jar:4.2.18.Final-redhat-2]
+	... 93 more
+
+21:53:56,635 INFO  [aggregator.service.PcInventoryUpdate] (http-/127.0.0.1:9080-1) Updating Inventoryas
+21:53:56,636 INFO  [stdout] (http-/127.0.0.1:9080-1) Hibernate: 
+21:53:56,636 INFO  [stdout] (http-/127.0.0.1:9080-1)     select
+21:53:56,637 INFO  [stdout] (http-/127.0.0.1:9080-1)         next_val as id_val 
+21:53:56,637 INFO  [stdout] (http-/127.0.0.1:9080-1)     from
+21:53:56,637 INFO  [stdout] (http-/127.0.0.1:9080-1)         hibernate_sequence for update
+21:53:56,637 INFO  [stdout] (http-/127.0.0.1:9080-1)             
+21:53:56,638 INFO  [stdout] (http-/127.0.0.1:9080-1) Hibernate: 
+21:53:56,639 INFO  [stdout] (http-/127.0.0.1:9080-1)     update
+21:53:56,639 INFO  [stdout] (http-/127.0.0.1:9080-1)         hibernate_sequence 
+21:53:56,639 INFO  [stdout] (http-/127.0.0.1:9080-1)     set
+21:53:56,639 INFO  [stdout] (http-/127.0.0.1:9080-1)         next_val= ? 
+21:53:56,639 INFO  [stdout] (http-/127.0.0.1:9080-1)     where
+21:53:56,640 INFO  [stdout] (http-/127.0.0.1:9080-1)         next_val=?
+21:53:56,723 INFO  [stdout] (http-/127.0.0.1:9080-1) Hibernate: 
+21:53:56,723 INFO  [stdout] (http-/127.0.0.1:9080-1)     /* insert aggregator.model.PcInventory
+21:53:56,723 INFO  [stdout] (http-/127.0.0.1:9080-1)         */ insert 
+21:53:56,723 INFO  [stdout] (http-/127.0.0.1:9080-1)         into
+21:53:56,723 INFO  [stdout] (http-/127.0.0.1:9080-1)             inventory_mgmt
+21:53:56,724 INFO  [stdout] (http-/127.0.0.1:9080-1)             (McAfee_Version, Domain, Hdd_Gb, Ip_add, Last_check, Login_Name, Machine, Model, MS_Office_Version, Open_Office, Operating_System, Os_Serial, Processor, Ram_Gb, Service_Tag, User_Id, Sr_No) 
+21:53:56,724 INFO  [stdout] (http-/127.0.0.1:9080-1)         values
+21:53:56,724 INFO  [stdout] (http-/127.0.0.1:9080-1)             (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+21:54:04,006 INFO  [stdout] (http-/127.0.0.1:9080-1) Hibernate: 
+21:54:04,006 INFO  [stdout] (http-/127.0.0.1:9080-1)     /* select
+21:54:04,007 INFO  [stdout] (http-/127.0.0.1:9080-1)         generatedAlias0 
+21:54:04,007 INFO  [stdout] (http-/127.0.0.1:9080-1)     from
+21:54:04,007 INFO  [stdout] (http-/127.0.0.1:9080-1)         PcInventory as generatedAlias0 
+21:54:04,007 INFO  [stdout] (http-/127.0.0.1:9080-1)     order by
+21:54:04,007 INFO  [stdout] (http-/127.0.0.1:9080-1)         generatedAlias0.userId asc */ select
+21:54:04,007 INFO  [stdout] (http-/127.0.0.1:9080-1)             pcinventor0_.Sr_No as Sr_No1_1_,
+21:54:04,007 INFO  [stdout] (http-/127.0.0.1:9080-1)             pcinventor0_.McAfee_Version as McAfee_V2_1_,
+21:54:04,007 INFO  [stdout] (http-/127.0.0.1:9080-1)             pcinventor0_.Domain as Domain3_1_,
+21:54:04,008 INFO  [stdout] (http-/127.0.0.1:9080-1)             pcinventor0_.Hdd_Gb as Hdd_Gb4_1_,
+21:54:04,008 INFO  [stdout] (http-/127.0.0.1:9080-1)             pcinventor0_.Ip_add as Ip_add5_1_,
+21:54:04,008 INFO  [stdout] (http-/127.0.0.1:9080-1)             pcinventor0_.Last_check as Last_che6_1_,
+21:54:04,008 INFO  [stdout] (http-/127.0.0.1:9080-1)             pcinventor0_.Login_Name as Login_Na7_1_,
+21:54:04,008 INFO  [stdout] (http-/127.0.0.1:9080-1)             pcinventor0_.Machine as Machine8_1_,
+21:54:04,008 INFO  [stdout] (http-/127.0.0.1:9080-1)             pcinventor0_.Model as Model9_1_,
+21:54:04,008 INFO  [stdout] (http-/127.0.0.1:9080-1)             pcinventor0_.MS_Office_Version as MS_Offi10_1_,
+21:54:04,008 INFO  [stdout] (http-/127.0.0.1:9080-1)             pcinventor0_.Open_Office as Open_Of11_1_,
+21:54:04,008 INFO  [stdout] (http-/127.0.0.1:9080-1)             pcinventor0_.Operating_System as Operati12_1_,
+21:54:04,009 INFO  [stdout] (http-/127.0.0.1:9080-1)             pcinventor0_.Os_Serial as Os_Seri13_1_,
+21:54:04,009 INFO  [stdout] (http-/127.0.0.1:9080-1)             pcinventor0_.Processor as Process14_1_,
+21:54:04,009 INFO  [stdout] (http-/127.0.0.1:9080-1)             pcinventor0_.Ram_Gb as Ram_Gb15_1_,
+21:54:04,009 INFO  [stdout] (http-/127.0.0.1:9080-1)             pcinventor0_.Service_Tag as Service16_1_,
+21:54:04,009 INFO  [stdout] (http-/127.0.0.1:9080-1)             pcinventor0_.User_Id as User_Id17_1_ 
+21:54:04,009 INFO  [stdout] (http-/127.0.0.1:9080-1)         from
+21:54:04,009 INFO  [stdout] (http-/127.0.0.1:9080-1)             inventory_mgmt pcinventor0_ 
+21:54:04,010 INFO  [stdout] (http-/127.0.0.1:9080-1)         order by
+21:54:04,010 INFO  [stdout] (http-/127.0.0.1:9080-1)             pcinventor0_.User_Id asc

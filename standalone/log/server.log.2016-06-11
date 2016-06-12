@@ -1,0 +1,267 @@
+23:40:09,467 INFO  [org.jboss.as.repository] (management-handler-thread - 5) JBAS014900: Content added at location /home/me/Downloads/runtimes/jboss-eap/standalone/data/content/82/1d1723a12fc91c11347e8b95d52310b62b2672/content
+23:40:09,568 INFO  [org.jboss.web] (ServerService Thread Pool -- 60) JBAS018224: Unregister web context: /aggregator
+23:40:09,708 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) JBAS016009: Stopping weld service for deployment aggregator.war
+23:40:09,712 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 67) JBAS011403: Stopping Persistence Unit Service 'aggregator.war#black'
+23:40:09,812 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010409: Unbound data source [java:jboss/datasources/aggregatorH2DS]
+23:40:09,812 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) JBAS010409: Unbound data source [java:jboss/datasources/aggregatorMySQLDS]
+23:40:09,905 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015877: Stopped deployment aggregator.war (runtime-name: aggregator.war) in 384ms
+23:40:09,908 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015876: Starting deployment of "aggregator.war" (runtime-name: "aggregator.war")
+23:40:10,641 WARN  [org.jboss.weld.deployer] (MSC service thread 1-6) JBAS016010: Warning while parsing vfs:/content/aggregator.war/WEB-INF/beans.xml:22 schema_reference.4: Failed to read schema document 'http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd', because 1) could not find the document; 2) the document could not be read; 3) the root element of the document is not <xsd:schema>.
+23:40:10,643 INFO  [org.jboss.as.jpa] (MSC service thread 1-6) JBAS011401: Read persistence.xml for black
+23:40:10,644 WARN  [org.jboss.as.connector.logging] (MSC service thread 1-6) JBAS010489: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+23:40:10,732 WARN  [org.jboss.as.connector.deployer.dsdeployer] (MSC service thread 1-6) JBAS010411: <drivers/> in standalone -ds.xml deployments aren't supported: Ignoring aggregator.war
+23:40:10,738 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) JBAS010400: Bound data source [java:jboss/datasources/aggregatorMySQLDS]
+23:40:10,738 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) JBAS010400: Bound data source [java:jboss/datasources/aggregatorH2DS]
+23:40:10,749 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) JBAS016002: Processing weld deployment aggregator.war
+23:40:10,759 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named MemberRegistration in deployment unit deployment "aggregator.war" are as follows:
+
+	java:global/aggregator/MemberRegistration!aggregator.service.MemberRegistration
+	java:app/aggregator/MemberRegistration!aggregator.service.MemberRegistration
+	java:module/MemberRegistration!aggregator.service.MemberRegistration
+	java:global/aggregator/MemberRegistration
+	java:app/aggregator/MemberRegistration
+	java:module/MemberRegistration
+
+23:40:10,759 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named PcInventoryUpdate in deployment unit deployment "aggregator.war" are as follows:
+
+	java:global/aggregator/PcInventoryUpdate!aggregator.service.PcInventoryUpdate
+	java:app/aggregator/PcInventoryUpdate!aggregator.service.PcInventoryUpdate
+	java:module/PcInventoryUpdate!aggregator.service.PcInventoryUpdate
+	java:global/aggregator/PcInventoryUpdate
+	java:app/aggregator/PcInventoryUpdate
+	java:module/PcInventoryUpdate
+
+23:40:10,938 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+23:40:10,939 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.fabric.jdbc.FabricMySQLDriver (version 5.1)
+23:40:10,940 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) JBAS016005: Starting Services for CDI deployment: aggregator.war
+23:40:10,944 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) JBAS016008: Starting weld service for deployment aggregator.war
+23:40:10,945 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 67) JBAS011402: Starting Persistence Unit Service 'aggregator.war#black'
+23:40:10,946 INFO  [org.hibernate.ejb.Ejb3Configuration] (ServerService Thread Pool -- 67) HHH000204: Processing PersistenceUnitInfo [
+	name: black
+	...]
+23:40:10,984 INFO  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] (ServerService Thread Pool -- 67) HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+23:40:10,989 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 67) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+23:40:11,024 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 67) MSC000001: Failed to start service jboss.persistenceunit."aggregator.war#black": org.jboss.msc.service.StartException in service jboss.persistenceunit."aggregator.war#black": javax.persistence.PersistenceException: [PersistenceUnit: black] Unable to build EntityManagerFactory
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:103)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_65]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_65]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: black] Unable to build EntityManagerFactory
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:925)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:900)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:76)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.createContainerEntityManagerFactory(PersistenceUnitServiceImpl.java:200)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.access$600(PersistenceUnitServiceImpl.java:57)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:99)
+	... 4 more
+Caused by: org.hibernate.AnnotationException: Unable to create unique key constraint (Login_Name, invoice_number) on table licenses: database column 'Login_Name' not found. Make sure that you use the correct column name which depends on the naming strategy in use (it may not be the same as the property name in the entity, especially for relational types)
+	at org.hibernate.cfg.Configuration.buildUniqueKeyFromColumnNames(Configuration.java:1628)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1421)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1786)
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:96)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:915)
+	... 9 more
+
+23:40:11,057 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 5) JBAS014612: Operation ("full-replace-deployment") failed - address: (undefined) - failure description: {"JBAS014671: Failed services" => {"jboss.persistenceunit.\"aggregator.war#black\"" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.\"aggregator.war#black\": javax.persistence.PersistenceException: [PersistenceUnit: black] Unable to build EntityManagerFactory
+    Caused by: javax.persistence.PersistenceException: [PersistenceUnit: black] Unable to build EntityManagerFactory
+    Caused by: org.hibernate.AnnotationException: Unable to create unique key constraint (Login_Name, invoice_number) on table licenses: database column 'Login_Name' not found. Make sure that you use the correct column name which depends on the naming strategy in use (it may not be the same as the property name in the entity, especially for relational types)"}}
+23:40:11,067 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) JBAS016009: Stopping weld service for deployment aggregator.war
+23:40:11,073 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010409: Unbound data source [java:jboss/datasources/aggregatorH2DS]
+23:40:11,073 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010409: Unbound data source [java:jboss/datasources/aggregatorMySQLDS]
+23:40:11,160 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015877: Stopped deployment aggregator.war (runtime-name: aggregator.war) in 100ms
+23:40:11,165 INFO  [org.jboss.as.controller] (management-handler-thread - 5) JBAS014774: Service status report
+JBAS014775:    New missing/unsatisfied dependencies:
+      service jboss.deployment.unit."aggregator.war".WeldBootstrapService (missing) dependents: [service jboss.deployment.unit."aggregator.war".component.MemberRegistration.WeldInstantiator, service jboss.deployment.unit."aggregator.war".component."com.sun.faces.config.ConfigureListener".WeldInstantiator, service jboss.deployment.unit."aggregator.war".component.PcInventoryUpdate.WeldInstantiator, service jboss.deployment.unit."aggregator.war".component.PcInventoryUpdate.WeldInterceptorBindingsService, JBAS014799: ... and 10 more ] 
+      service jboss.deployment.unit."aggregator.war".WeldStartService (missing) dependents: [service jboss.deployment.unit."aggregator.war".component."org.apache.catalina.servlets.DefaultServlet".WeldInstantiator, service jboss.deployment.unit."aggregator.war".component.MemberRegistration.WeldInstantiator, service jboss.deployment.unit."aggregator.war".component."com.sun.faces.config.ConfigureListener".WeldInstantiator, service jboss.deployment.unit."aggregator.war".component.PcInventoryUpdate.WeldInstantiator, JBAS014799: ... and 8 more ] 
+      service jboss.deployment.unit."aggregator.war".component.MemberRegistration.CREATE (missing) dependents: [service jboss.deployment.unit."aggregator.war".component.MemberRegistration.START] 
+      service jboss.deployment.unit."aggregator.war".component.MemberRegistration.START (missing) dependents: [service jboss.web.deployment.default-host./aggregator, service jboss.deployment.unit."aggregator.war".moduleDeploymentRuntimeInformationStart, service jboss.deployment.unit."aggregator.war".deploymentCompleteService] 
+      service jboss.deployment.unit."aggregator.war".component.MemberRegistration.VIEW."aggregator.service.MemberRegistration".LOCAL (missing) dependents: [service jboss.deployment.unit."aggregator.war".component.MemberRegistration.START] 
+      service jboss.deployment.unit."aggregator.war".component.MemberRegistration.WeldInstantiator (missing) dependents: [service jboss.deployment.unit."aggregator.war".component.MemberRegistration.START] 
+      service jboss.deployment.unit."aggregator.war".component.MemberRegistration.WeldInterceptorBindingsService (missing) dependents: [service jboss.deployment.unit."aggregator.war".component.MemberRegistration.WeldInstantiator] 
+      service jboss.deployment.unit."aggregator.war".component.PcInventoryUpdate.CREATE (missing) dependents: [service jboss.deployment.unit."aggregator.war".component.PcInventoryUpdate.START] 
+      service jboss.deployment.unit."aggregator.war".component.PcInventoryUpdate.START (missing) dependents: [service jboss.web.deployment.default-host./aggregator, service jboss.deployment.unit."aggregator.war".moduleDeploymentRuntimeInformationStart, service jboss.deployment.unit."aggregator.war".deploymentCompleteService] 
+      service jboss.deployment.unit."aggregator.war".component.PcInventoryUpdate.VIEW."aggregator.service.PcInventoryUpdate".LOCAL (missing) dependents: [service jboss.deployment.unit."aggregator.war".component.PcInventoryUpdate.START] 
+      service jboss.deployment.unit."aggregator.war".component.PcInventoryUpdate.WeldInstantiator (missing) dependents: [service jboss.deployment.unit."aggregator.war".component.PcInventoryUpdate.START] 
+      service jboss.deployment.unit."aggregator.war".component.PcInventoryUpdate.WeldInterceptorBindingsService (missing) dependents: [service jboss.deployment.unit."aggregator.war".component.PcInventoryUpdate.WeldInstantiator] 
+      service jboss.deployment.unit."aggregator.war".component."com.sun.faces.config.ConfigureListener".CREATE (missing) dependents: [service jboss.deployment.unit."aggregator.war".component."com.sun.faces.config.ConfigureListener".START] 
+      service jboss.deployment.unit."aggregator.war".component."com.sun.faces.config.ConfigureListener".START (missing) dependents: [service jboss.web.deployment.default-host./aggregator, service jboss.deployment.unit."aggregator.war".deploymentCompleteService] 
+      service jboss.deployment.unit."aggregator.war".component."com.sun.faces.config.ConfigureListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."aggregator.war".component."com.sun.faces.config.ConfigureListener".START] 
+      service jboss.deployment.unit."aggregator.war".component."javax.faces.webapp.FacetTag".CREATE (missing) dependents: [service jboss.deployment.unit."aggregator.war".component."javax.faces.webapp.FacetTag".START] 
+      service jboss.deployment.unit."aggregator.war".component."javax.faces.webapp.FacetTag".START (missing) dependents: [service jboss.web.deployment.default-host./aggregator, service jboss.deployment.unit."aggregator.war".deploymentCompleteService] 
+      service jboss.deployment.unit."aggregator.war".component."javax.faces.webapp.FacetTag".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."aggregator.war".component."javax.faces.webapp.FacetTag".START] 
+      service jboss.deployment.unit."aggregator.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".CREATE (missing) dependents: [service jboss.deployment.unit."aggregator.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START] 
+      service jboss.deployment.unit."aggregator.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START (missing) dependents: [service jboss.web.deployment.default-host./aggregator, service jboss.deployment.unit."aggregator.war".deploymentCompleteService] 
+      service jboss.deployment.unit."aggregator.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."aggregator.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START] 
+      service jboss.deployment.unit."aggregator.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".CREATE (missing) dependents: [service jboss.deployment.unit."aggregator.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START] 
+      service jboss.deployment.unit."aggregator.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START (missing) dependents: [service jboss.web.deployment.default-host./aggregator, service jboss.deployment.unit."aggregator.war".deploymentCompleteService] 
+      service jboss.deployment.unit."aggregator.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."aggregator.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START] 
+      service jboss.deployment.unit."aggregator.war".component."org.apache.catalina.servlets.DefaultServlet".CREATE (missing) dependents: [service jboss.deployment.unit."aggregator.war".component."org.apache.catalina.servlets.DefaultServlet".START] 
+      service jboss.deployment.unit."aggregator.war".component."org.apache.catalina.servlets.DefaultServlet".START (missing) dependents: [service jboss.web.deployment.default-host./aggregator, service jboss.deployment.unit."aggregator.war".deploymentCompleteService] 
+      service jboss.deployment.unit."aggregator.war".component."org.apache.catalina.servlets.DefaultServlet".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."aggregator.war".component."org.apache.catalina.servlets.DefaultServlet".START] 
+      service jboss.deployment.unit."aggregator.war".component."org.apache.jasper.servlet.JspServlet".CREATE (missing) dependents: [service jboss.deployment.unit."aggregator.war".component."org.apache.jasper.servlet.JspServlet".START] 
+      service jboss.deployment.unit."aggregator.war".component."org.apache.jasper.servlet.JspServlet".START (missing) dependents: [service jboss.web.deployment.default-host./aggregator, service jboss.deployment.unit."aggregator.war".deploymentCompleteService] 
+      service jboss.deployment.unit."aggregator.war".component."org.apache.jasper.servlet.JspServlet".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."aggregator.war".component."org.apache.jasper.servlet.JspServlet".START] 
+      service jboss.deployment.unit."aggregator.war".component."org.jboss.as.weld.webtier.jsp.JspInitializationListener".CREATE (missing) dependents: [service jboss.deployment.unit."aggregator.war".component."org.jboss.as.weld.webtier.jsp.JspInitializationListener".START] 
+      service jboss.deployment.unit."aggregator.war".component."org.jboss.as.weld.webtier.jsp.JspInitializationListener".START (missing) dependents: [service jboss.web.deployment.default-host./aggregator, service jboss.deployment.unit."aggregator.war".deploymentCompleteService] 
+      service jboss.deployment.unit."aggregator.war".component."org.jboss.as.weld.webtier.jsp.JspInitializationListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."aggregator.war".component."org.jboss.as.weld.webtier.jsp.JspInitializationListener".START] 
+      service jboss.deployment.unit."aggregator.war".jndiDependencyService (missing) dependents: [service jboss.deployment.unit."aggregator.war".component."com.sun.faces.config.ConfigureListener".START, service jboss.web.deployment.default-host./aggregator, service jboss.deployment.unit."aggregator.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START, service jboss.deployment.unit."aggregator.war".component.PcInventoryUpdate.START, JBAS014799: ... and 8 more ] 
+      service jboss.deployment.unit."aggregator.war".moduleDeploymentRuntimeInformation (missing) dependents: [service jboss.deployment.unit."aggregator.war".moduleDeploymentRuntimeInformationStart, service jboss.deployment.unit."aggregator.war".component.PcInventoryUpdate.START, service jboss.deployment.unit."aggregator.war".component.MemberRegistration.START] 
+      service jboss.persistenceunit."aggregator.war#black" (missing) dependents: [service jboss.deployment.unit."aggregator.war".component."com.sun.faces.config.ConfigureListener".START, service jboss.web.deployment.default-host./aggregator, service jboss.deployment.unit."aggregator.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START, service jboss.deployment.unit."aggregator.war".component.PcInventoryUpdate.START, JBAS014799: ... and 9 more ] 
+      service jboss.web.deployment.default-host./aggregator (missing) dependents: [service jboss.deployment.unit."aggregator.war".deploymentCompleteService] 
+      service jboss.web.deployment.default-host./aggregator.realm (missing) dependents: [service jboss.web.deployment.default-host./aggregator, service jboss.deployment.unit."aggregator.war".deploymentCompleteService] 
+JBAS014777:   Services which failed to start:      service jboss.persistenceunit."aggregator.war#black"
+
+23:40:11,187 INFO  [org.jboss.as.repository] (management-handler-thread - 5) JBAS014901: Content removed from location /home/me/Downloads/runtimes/jboss-eap/standalone/data/content/82/1d1723a12fc91c11347e8b95d52310b62b2672/content
+23:41:55,522 INFO  [org.jboss.as.repository] (management-handler-thread - 7) JBAS014900: Content added at location /home/me/Downloads/runtimes/jboss-eap/standalone/data/content/82/1d1723a12fc91c11347e8b95d52310b62b2672/content
+23:41:55,523 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "aggregator.war" (runtime-name: "aggregator.war")
+23:41:56,159 WARN  [org.jboss.weld.deployer] (MSC service thread 1-5) JBAS016010: Warning while parsing vfs:/content/aggregator.war/WEB-INF/beans.xml:22 schema_reference.4: Failed to read schema document 'http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd', because 1) could not find the document; 2) the document could not be read; 3) the root element of the document is not <xsd:schema>.
+23:41:56,161 INFO  [org.jboss.as.jpa] (MSC service thread 1-5) JBAS011401: Read persistence.xml for black
+23:41:56,162 WARN  [org.jboss.as.connector.logging] (MSC service thread 1-5) JBAS010489: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+23:41:56,211 WARN  [org.jboss.as.connector.deployer.dsdeployer] (MSC service thread 1-4) JBAS010411: <drivers/> in standalone -ds.xml deployments aren't supported: Ignoring aggregator.war
+23:41:56,216 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) JBAS010400: Bound data source [java:jboss/datasources/aggregatorH2DS]
+23:41:56,216 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) JBAS010400: Bound data source [java:jboss/datasources/aggregatorMySQLDS]
+23:41:56,221 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) JBAS016002: Processing weld deployment aggregator.war
+23:41:56,223 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named MemberRegistration in deployment unit deployment "aggregator.war" are as follows:
+
+	java:global/aggregator/MemberRegistration!aggregator.service.MemberRegistration
+	java:app/aggregator/MemberRegistration!aggregator.service.MemberRegistration
+	java:module/MemberRegistration!aggregator.service.MemberRegistration
+	java:global/aggregator/MemberRegistration
+	java:app/aggregator/MemberRegistration
+	java:module/MemberRegistration
+
+23:41:56,223 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named PcInventoryUpdate in deployment unit deployment "aggregator.war" are as follows:
+
+	java:global/aggregator/PcInventoryUpdate!aggregator.service.PcInventoryUpdate
+	java:app/aggregator/PcInventoryUpdate!aggregator.service.PcInventoryUpdate
+	java:module/PcInventoryUpdate!aggregator.service.PcInventoryUpdate
+	java:global/aggregator/PcInventoryUpdate
+	java:app/aggregator/PcInventoryUpdate
+	java:module/PcInventoryUpdate
+
+23:41:56,255 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+23:41:56,256 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.fabric.jdbc.FabricMySQLDriver (version 5.1)
+23:41:56,257 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) JBAS016005: Starting Services for CDI deployment: aggregator.war
+23:41:56,261 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) JBAS016008: Starting weld service for deployment aggregator.war
+23:41:56,260 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 68) JBAS011402: Starting Persistence Unit Service 'aggregator.war#black'
+23:41:56,262 INFO  [org.hibernate.ejb.Ejb3Configuration] (ServerService Thread Pool -- 68) HHH000204: Processing PersistenceUnitInfo [
+	name: black
+	...]
+23:41:56,290 INFO  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] (ServerService Thread Pool -- 68) HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+23:41:56,293 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 68) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+23:41:56,312 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 68) MSC000001: Failed to start service jboss.persistenceunit."aggregator.war#black": org.jboss.msc.service.StartException in service jboss.persistenceunit."aggregator.war#black": javax.persistence.PersistenceException: [PersistenceUnit: black] Unable to build EntityManagerFactory
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:103)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_65]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_65]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122) [jboss-threads-2.1.2.Final-redhat-1.jar:2.1.2.Final-redhat-1]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: black] Unable to build EntityManagerFactory
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:925)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:900)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:76)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.createContainerEntityManagerFactory(PersistenceUnitServiceImpl.java:200)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.access$600(PersistenceUnitServiceImpl.java:57)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:99)
+	... 4 more
+Caused by: org.hibernate.AnnotationException: Unable to create unique key constraint (Login_Name, invoice_number) on table licenses: database column 'Login_Name' not found. Make sure that you use the correct column name which depends on the naming strategy in use (it may not be the same as the property name in the entity, especially for relational types)
+	at org.hibernate.cfg.Configuration.buildUniqueKeyFromColumnNames(Configuration.java:1628)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1421)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1786)
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:96)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:915)
+	... 9 more
+
+23:41:56,319 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 7) JBAS014612: Operation ("full-replace-deployment") failed - address: (undefined) - failure description: {"JBAS014671: Failed services" => {"jboss.persistenceunit.\"aggregator.war#black\"" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.\"aggregator.war#black\": javax.persistence.PersistenceException: [PersistenceUnit: black] Unable to build EntityManagerFactory
+    Caused by: javax.persistence.PersistenceException: [PersistenceUnit: black] Unable to build EntityManagerFactory
+    Caused by: org.hibernate.AnnotationException: Unable to create unique key constraint (Login_Name, invoice_number) on table licenses: database column 'Login_Name' not found. Make sure that you use the correct column name which depends on the naming strategy in use (it may not be the same as the property name in the entity, especially for relational types)"}}
+23:41:56,323 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) JBAS016009: Stopping weld service for deployment aggregator.war
+23:41:56,334 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) JBAS010409: Unbound data source [java:jboss/datasources/aggregatorMySQLDS]
+23:41:56,335 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) JBAS010409: Unbound data source [java:jboss/datasources/aggregatorH2DS]
+23:41:56,407 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015877: Stopped deployment aggregator.war (runtime-name: aggregator.war) in 86ms
+23:41:56,408 INFO  [org.jboss.as.controller] (management-handler-thread - 7) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.persistenceunit."aggregator.war#black"
+
+23:41:56,426 INFO  [org.jboss.as.repository] (management-handler-thread - 7) JBAS014901: Content removed from location /home/me/Downloads/runtimes/jboss-eap/standalone/data/content/82/1d1723a12fc91c11347e8b95d52310b62b2672/content
+23:59:32,612 INFO  [org.jboss.as.repository] (management-handler-thread - 9) JBAS014900: Content added at location /home/me/Downloads/runtimes/jboss-eap/standalone/data/content/82/1d1723a12fc91c11347e8b95d52310b62b2672/content
+23:59:32,613 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015876: Starting deployment of "aggregator.war" (runtime-name: "aggregator.war")
+23:59:33,216 WARN  [org.jboss.weld.deployer] (MSC service thread 1-4) JBAS016010: Warning while parsing vfs:/content/aggregator.war/WEB-INF/beans.xml:22 schema_reference.4: Failed to read schema document 'http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd', because 1) could not find the document; 2) the document could not be read; 3) the root element of the document is not <xsd:schema>.
+23:59:33,217 INFO  [org.jboss.as.jpa] (MSC service thread 1-4) JBAS011401: Read persistence.xml for black
+23:59:33,218 WARN  [org.jboss.as.connector.logging] (MSC service thread 1-4) JBAS010489: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+23:59:33,262 WARN  [org.jboss.as.connector.deployer.dsdeployer] (MSC service thread 1-3) JBAS010411: <drivers/> in standalone -ds.xml deployments aren't supported: Ignoring aggregator.war
+23:59:33,264 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) JBAS010400: Bound data source [java:jboss/datasources/aggregatorH2DS]
+23:59:33,268 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) JBAS010400: Bound data source [java:jboss/datasources/aggregatorMySQLDS]
+23:59:33,271 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) JBAS016002: Processing weld deployment aggregator.war
+23:59:33,272 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named MemberRegistration in deployment unit deployment "aggregator.war" are as follows:
+
+	java:global/aggregator/MemberRegistration!aggregator.service.MemberRegistration
+	java:app/aggregator/MemberRegistration!aggregator.service.MemberRegistration
+	java:module/MemberRegistration!aggregator.service.MemberRegistration
+	java:global/aggregator/MemberRegistration
+	java:app/aggregator/MemberRegistration
+	java:module/MemberRegistration
+
+23:59:33,273 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named PcInventoryUpdate in deployment unit deployment "aggregator.war" are as follows:
+
+	java:global/aggregator/PcInventoryUpdate!aggregator.service.PcInventoryUpdate
+	java:app/aggregator/PcInventoryUpdate!aggregator.service.PcInventoryUpdate
+	java:module/PcInventoryUpdate!aggregator.service.PcInventoryUpdate
+	java:global/aggregator/PcInventoryUpdate
+	java:app/aggregator/PcInventoryUpdate
+	java:module/PcInventoryUpdate
+
+23:59:33,296 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+23:59:33,297 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.fabric.jdbc.FabricMySQLDriver (version 5.1)
+23:59:33,297 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) JBAS016005: Starting Services for CDI deployment: aggregator.war
+23:59:33,300 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) JBAS016008: Starting weld service for deployment aggregator.war
+23:59:33,302 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 70) JBAS011402: Starting Persistence Unit Service 'aggregator.war#black'
+23:59:33,302 INFO  [org.hibernate.ejb.Ejb3Configuration] (ServerService Thread Pool -- 70) HHH000204: Processing PersistenceUnitInfo [
+	name: black
+	...]
+23:59:33,321 INFO  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] (ServerService Thread Pool -- 70) HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+23:59:33,323 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 70) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+23:59:33,341 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 70) MSC000001: Failed to start service jboss.persistenceunit."aggregator.war#black": org.jboss.msc.service.StartException in service jboss.persistenceunit."aggregator.war#black": javax.persistence.PersistenceException: [PersistenceUnit: black] Unable to build EntityManagerFactory
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:103)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_65]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_65]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122) [jboss-threads-2.1.2.Final-redhat-1.jar:2.1.2.Final-redhat-1]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: black] Unable to build EntityManagerFactory
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:925)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:900)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:76)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.createContainerEntityManagerFactory(PersistenceUnitServiceImpl.java:200)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl.access$600(PersistenceUnitServiceImpl.java:57)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:99)
+	... 4 more
+Caused by: org.hibernate.AnnotationException: Unable to create unique key constraint (Login_Name, invoice_number) on table licenses: database column 'Login_Name' not found. Make sure that you use the correct column name which depends on the naming strategy in use (it may not be the same as the property name in the entity, especially for relational types)
+	at org.hibernate.cfg.Configuration.buildUniqueKeyFromColumnNames(Configuration.java:1628)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1421)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1786)
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:96)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:915)
+	... 9 more
+
+23:59:33,345 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 9) JBAS014612: Operation ("full-replace-deployment") failed - address: (undefined) - failure description: {"JBAS014671: Failed services" => {"jboss.persistenceunit.\"aggregator.war#black\"" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.\"aggregator.war#black\": javax.persistence.PersistenceException: [PersistenceUnit: black] Unable to build EntityManagerFactory
+    Caused by: javax.persistence.PersistenceException: [PersistenceUnit: black] Unable to build EntityManagerFactory
+    Caused by: org.hibernate.AnnotationException: Unable to create unique key constraint (Login_Name, invoice_number) on table licenses: database column 'Login_Name' not found. Make sure that you use the correct column name which depends on the naming strategy in use (it may not be the same as the property name in the entity, especially for relational types)"}}
+23:59:33,348 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) JBAS016009: Stopping weld service for deployment aggregator.war
+23:59:33,353 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) JBAS010409: Unbound data source [java:jboss/datasources/aggregatorMySQLDS]
+23:59:33,353 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) JBAS010409: Unbound data source [java:jboss/datasources/aggregatorH2DS]
+23:59:33,409 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015877: Stopped deployment aggregator.war (runtime-name: aggregator.war) in 64ms
+23:59:33,410 INFO  [org.jboss.as.controller] (management-handler-thread - 9) JBAS014774: Service status report
+JBAS014776:    Newly corrected services:
+      service jboss.deployment.unit."aggregator.war".component.MemberRegistration.CREATE (no longer required)
+      service jboss.deployment.unit."aggregator.war".component.MemberRegistration.WeldInterceptorBindingsService (no longer required)
+      service jboss.deployment.unit."aggregator.war".component.PcInventoryUpdate.CREATE (no longer required)
+      service jboss.deployment.unit."aggregator.war".component.PcInventoryUpdate.WeldInstantiator (no longer required)
+      service jboss.deployment.unit."aggregator.war".component."com.sun.faces.config.ConfigureListener".WeldInstantiator (no longer required)
+      service jboss.deployment.unit."aggregator.war".component."javax.faces.webapp.FacetTag".START (no longer required)
+      service jboss.deployment.unit."aggregator.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START (no longer required)
+      service jboss.deployment.unit."aggregator.war".component."org.apache.catalina.servlets.DefaultServlet".START (no longer required)
+      service jboss.deployment.unit."aggregator.war".component."org.apache.jasper.servlet.JspServlet".CREATE (no longer required)
+      service jboss.deployment.unit."aggregator.war".moduleDeploymentRuntimeInformation (no longer required)
+      service jboss.web.deployment.default-host./aggregator.realm (no longer required)
+JBAS014777:   Services which failed to start:      service jboss.persistenceunit."aggregator.war#black"
+
+23:59:33,425 INFO  [org.jboss.as.repository] (management-handler-thread - 9) JBAS014901: Content removed from location /home/me/Downloads/runtimes/jboss-eap/standalone/data/content/82/1d1723a12fc91c11347e8b95d52310b62b2672/content

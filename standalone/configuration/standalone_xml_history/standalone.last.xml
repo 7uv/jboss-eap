@@ -370,7 +370,7 @@
 
     <deployments>
         <deployment name="aggregator.war" runtime-name="aggregator.war">
-            <content sha1="c680c202ffbdf3a10ac0fef550eeeef10b2598ac"/>
+            <content sha1="003db501aaabd15322ed6c03ca02ad9a1743564c"/>
         </deployment>
     </deployments>
 </server>
